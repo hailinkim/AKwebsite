@@ -4,22 +4,13 @@
   --color-navy: #222433;
   --color-yellow: #9c824a;
   --color-beige: #ede7e7;
-  --color-darkwhite: #f5f5ef;
   --color-white: #ffffff;
 
-  /* Font size */
-  --font-large: 50px;
-  --font-medium: 30px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
-
   /* Font weight */
-  --weight-bold: 800;
-  --weight-regular: 600;
-  --weight-light: 400;
-
-  /* Size */
+  --weight-extrabold: 600;
+  --weight-bold: 500;
+  --weight-semibold: 400;
+  --weight-regular: 300;
 }
 
 /* Universal tags */
@@ -36,19 +27,18 @@ body {
 a {
   text-decoration: none;
   color: var(--color-navy);
-  font-weight: 400;
+  font-weight: var(--weight-semibold);
   font-size: 25px;
 }
 
 ul {
-  font-weight: 300;
+  font-weight: var(--weight-regular);
   list-style: none;
   padding-left: 0;
 }
 /* Typography */
 
-h1 {
-  font-family: "Catamaran", sans-serif;
+/* h1 {
   font-weight: var(--weight-bold);
   font-size: var(--font-large);
   color: var(--color-beige);
@@ -57,7 +47,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Lora", serif;
   font-size: var(--font-medium);
   font-weight: var(--weight-regular);
   color: var(--color-navy);
@@ -65,7 +54,6 @@ h2 {
 }
 
 h3 {
-  font-family: "Lora", serif;
   font-size: var(--font-regular);
   font-weight: var(--weight-light);
   color: var(--color-navy);
@@ -73,12 +61,11 @@ h3 {
 }
 
 p {
-  font-family: "Lora", serif;
   font-size: var(--font-regular);
   font-weight: var(--weight-light);
   color: var(--color-navy);
   margin: 4px 0;
-}
+} */
 
 /* Navbar */
 
@@ -101,10 +88,10 @@ p {
   cursor: pointer;
 }
 
-.navbar__menu__item:active {
+/* .navbar__menu__item:active {
   background-color: var(--color-yellow);
   border-radius: 4px;
-}
+} */
 
 .navbar__menu__item:hover {
   color: var(--color-yellow);
@@ -113,25 +100,25 @@ p {
 /* About */
 #about {
   background: url("img/background4.001.png") center/cover;
-  padding: 250px 25px 250px 25px;
-  text-align: center;
+  padding: 250px 25px 250px 50px;
+  /* text-align: center; */
   color: var(--color-white);
 }
 .about__name {
-  font-family: "Montserrat", sans-serif;
+  font-weight: var(--weight-extrabold);
+  font-size: 50px;
+  margin: 0;
 }
 .about__title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: var(--color-yellow);
-  margin: 0 0 50px;
+  font-weight: var(--weight-bold);
+  font-size: 30px;
+  margin: 0 0 45px;
 }
 .about__description {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: var(--weight-regular);
+  font-size: 15.5px;
   color: var(--color-white);
 }
 .highlight {
-  color: var(--color-yellow);
+  color: #9c824a;
 }
