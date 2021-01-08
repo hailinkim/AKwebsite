@@ -38,34 +38,24 @@ ul {
 }
 /* Typography */
 
-/* h1 {
-  font-weight: var(--weight-bold);
-  font-size: var(--font-large);
-  color: var(--color-beige);
+h1 {
+  font-weight: var(--weight-extrabold);
   margin: 0;
-  letter-spacing: 2px;
 }
 
 h2 {
-  font-size: var(--font-medium);
-  font-weight: var(--weight-regular);
-  color: var(--color-navy);
+  font-weight: var(--weight-bold);
   margin: 0;
 }
 
 h3 {
-  font-size: var(--font-regular);
-  font-weight: var(--weight-light);
-  color: var(--color-navy);
-  margin: 0;
+  font-weight: var(--weight-semibold);
 }
 
 p {
-  font-size: var(--font-regular);
-  font-weight: var(--weight-light);
-  color: var(--color-navy);
-  margin: 4px 0;
-} */
+  font-size: var(--weight-regular);
+  margin: 0;
+}
 
 /* Navbar */
 
@@ -116,9 +106,52 @@ p {
 }
 .about__description {
   font-weight: var(--weight-regular);
-  font-size: 15.5px;
+  font-size: 18px;
   color: var(--color-white);
+  max-width: 1200px;
 }
 .highlight {
   color: #9c824a;
 }
+
+/* Sections in common */
+.section {
+  padding: 100px 0;
+  text-align: center;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Skills */
+
+h1.skills {
+  color: var(--color-navy);
+  margin: 0 0 50px 0;
+  font-size: 40px;
+}
+.skills__skillset {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 70px 0;
+}
+
+.skillset__title,
+.skillset__description {
+  color: var(--color-navy);
+}
+
+/* .skills__bootcamp {
+  color: var(--color-beige);
+  text-align: start;
+  padding: 80px;
+  background-color: var(--color-navy);
+  margin: 0;
+}
+
+.bootcamp__name,
+.bootcamp__description {
+  font-weight: var(--weight-regular);
+}
+.title {
+  font-weight: var(--weight-semibold);
+} */
