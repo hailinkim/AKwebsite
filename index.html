@@ -40,11 +40,11 @@
         <h1 class="about__name">Hi, I'm Angelica.</h1>
         <h2 class="about__title">Data Scientist</h2>
         <h3 class="about__description">A rising sophomore studying computer science and statistics at Amherst College. <br/> 
-        I am a data scientist who rolls up her sleeves to <span class="highlight">explore the unknown</span> and <span class="highlight">perseveres</span> in the face of the unprecedented errors.</h3>
+        I am a data scientist who rolls up her sleeves to <span class="highlight">explore the unknown</span> and <span class="highlight">perseveres</span> even in the face of the unprecedented errors.</h3>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section">
+    <section id="skills" class="section section container">
         <h1 class="skills">SKILLS</h1>
         <div class="skills__skillset">
             <div class="skillset__programming">
@@ -64,23 +64,31 @@
     </section>
 
     <!-- Portfolio -->
-    <section id="Portfolio" class="section">
-        <h1>PORTFOLIO</h1>
-        <div class="portfolio__categ">
-            <button class="categ__btn">Research</button>
-            <button class="categ__btn">Projects</button>
-            <!-- might change to list <li class="navbar__menu__item">About</li> -->
-        </div>
+    <section id="portfolio" class="section">
+        <div class="section__container">
+            <h1 class="portfolio">PORTFOLIO</h1>
 
-        <div class="portfolio__projects">
-            <div class="project">
-                <p class="project__title">How do I spend my time?</p>
-                <p class="project__description">Collected and wrangled data from Google Calendar to analyze how I spend my time</p>
+            <div class="portfolio__categ">
+                <ul class="categ__btn">
+                    <li class="categ__btn__item">RESEARCH</li>
+                    <li class="categ__btn__item">·</li>
+                    <li class="categ__btn__item">PROJECTS</li>
+                </ul>
             </div>
-            <a href="https://github.com/hailinkim/Stat-231/tree/master/homework" class="project" target="blank">
-                <img src="img/project/calendar.png" alt="">
-            </a>
-        </div>
+
+            <div class="portfolio__projects">
+                <div class="project">
+                    <h2 class="project__title">Calendar: How do I spend my time?</h2>
+                    <p class="project__description">Collected and wrangled data from Google Calendar to analyze how I spend my time</p>
+                    <p class="project__hashtag">#Data Science  #R</p>
+                    <p class="project__link">github ></p>
+                    <a href="https://github.com/hailinkim/Stat-231/tree/master/homework" class="project" target="blank">
+                        
+                    </a>
+                </div>
+                <img src="img/project/calendar.png" alt="" class="project">
+            </div>
+        </div> 
     </section>
 
     <!-- Contact -->

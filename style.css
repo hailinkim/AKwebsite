@@ -36,11 +36,31 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+
+.portfolio__categ {
+  display: flex;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--color-beige);
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-size: 14px;
+  /* display: block;
+  margin: auto;
+  align-items: center; */
+}
+
 /* Typography */
 
 h1 {
   font-weight: var(--weight-extrabold);
   margin: 0;
+  font-size: 40px;
 }
 
 h2 {
@@ -118,16 +138,17 @@ p {
 .section {
   padding: 100px 0;
   text-align: center;
-  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
+  margin: auto;
 }
 
 /* Skills */
-
 h1.skills {
   color: var(--color-navy);
   margin: 0 0 50px 0;
-  font-size: 40px;
 }
 .skills__skillset {
   display: flex;
@@ -155,3 +176,67 @@ h1.skills {
 .title {
   font-weight: var(--weight-semibold);
 } */
+
+/* Portfolio */
+#portfolio {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+.portfolio__categ {
+  justify-content: center;
+}
+
+.categ__btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.categ__btn__item {
+  padding: 15px 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.categ__btn__item:hover {
+  color: var(--color-yellow);
+}
+
+.portfolio__projects {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  color: var(--color-beige);
+}
+
+.project {
+  margin: 0 50px;
+  text-align: left;
+}
+
+.project__title {
+  color: var(--color-yellow);
+}
+
+.project__description {
+  font-weight: var(--weight-regular);
+}
+
+.project__hashtag {
+  padding: 15px 0 0 0;
+  color: var(--color-yellow);
+  font-weight: var(--weight-bold);
+}
+
+.project__link {
+  font-weight: var(--weight-regular);
+  color: var(--color-beige);
+  font-weight: var(--weight-regular);
+}
+
+img.project {
+  width: 450px;
+  height: 450px;
+  border-radius: 80%;
+}
