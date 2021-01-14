@@ -140,6 +140,11 @@ p {
   text-align: center;
 }
 
+.section2 {
+  padding: 50px 0;
+  text-align: center;
+}
+
 .section__container {
   max-width: 1200px;
   margin: auto;
@@ -229,14 +234,47 @@ h1.skills {
   font-weight: var(--weight-bold);
 }
 
-.project__link {
+.project__logo {
+  color: var(--color-white);
+  margin: 0px;
   font-weight: var(--weight-regular);
-  color: var(--color-beige);
-  font-weight: var(--weight-regular);
+  font-size: 20px;
+  text-align: right;
+  width: 15%;
+  height: 15%;
+}
+
+.project__logo:hover {
+  color: var(--color-yellow);
 }
 
 img.project {
   width: 450px;
   height: 450px;
   border-radius: 80%;
+}
+
+.project__icon {
+  color: var(--color-white);
+  margin: 0px;
+  font-weight: var(--weight-regular);
+  font-size: 20px;
+}
+
+.project__icon:hover {
+  color: var(--color-yellow);
+}
+
+/* Contact */
+#contact {
+  background-color: #f7f7f7;
+}
+
+.contact__title {
+  padding: 0 0 15px 0;
+  font-size: 35px;
+}
+
+.contact__rights {
+  font-size: 14px;
 }
