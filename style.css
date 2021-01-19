@@ -92,6 +92,7 @@ p {
   color: var(--color-navy);
   padding: 0 50px 0 50px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 .navbar__menu {
