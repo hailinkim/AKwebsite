@@ -1,18 +1,19 @@
 'use strict'
 
 // Make navbar transparent when it's on the top
-const navbar = document.querySelector('#navbar');
-const navbarHeight = navbar.getBoundingClientRect().height;
-document.addEventListener('scroll', () => {
-    console.log(window.scrollY);
-    console.log(`navbarHeight: ${navbarHeight}`);
-    if(window.scrollY > navbarHeight) {
-        navbar.classList.add('navbar--dark');
-    } else {
-        navbar.classList.remove('navbar--dark');
-    }
+// const navbar = document.querySelector('#navbar');
+// const navbarHeight = navbar.getBoundingClientRect().height;
+// document.addEventListener('scroll', () => {
+//     console.log(window.scrollY);
+//     console.log(`navbarHeight: ${navbarHeight}`);
+//     if(window.scrollY > navbarHeight) {
+//         navbar.classList.add('navbar--dark');
+//     } else {
+//         navbar.classList.remove('navbar--dark');
+//     }
 
-})
+// })
+
 
 //Scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');
@@ -24,8 +25,20 @@ navbarMenu.addEventListener('click', (event) => {
         return;
     }
 
+    //Remove selection 
+    const active = document.querySelector('.navbar__menu__item.selected');
+    active.classList.remove('selected');
+    event.target.classList.add('selected');
+
     scrollIntoView(link);
 });
+
+//Navbar toggle button
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+})
+
 
 //Make about gradually fade to transparent as the window scolls down
 const about = document.querySelector('.about__container');
