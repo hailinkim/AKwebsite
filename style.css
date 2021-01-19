@@ -248,7 +248,7 @@ h1.skills {
 
 .thesis__hashtag,
 .project__hashtag {
-  padding: 15px 0 0 0;
+  padding: 15px 0 5px 0;
   color: var(--color-yellow);
   font-weight: var(--weight-bold);
 }
@@ -282,14 +282,19 @@ h1.skills {
   margin: 0px;
   font-weight: var(--weight-regular);
   font-size: 20px;
+  transition: all var(--animation-duration) ease-in-out;
+  padding: 20px 0;
+  line-height: 20px;
 }
 
 .thesis__icon:hover {
   color: var(--color-yellow);
+  font-size: 22px;
 }
 
 .project__icon:hover {
   color: var(--color-yellow);
+  font-size: 22px;
 }
 
 /* Contact */
