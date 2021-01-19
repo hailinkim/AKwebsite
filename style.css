@@ -11,6 +11,9 @@
   --weight-bold: 500;
   --weight-semibold: 400;
   --weight-regular: 300;
+
+  /* Annimation */
+  --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -27,11 +30,12 @@ body {
 a {
   text-decoration: none;
   color: var(--color-navy);
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-regular);
   font-size: 25px;
 }
 
-ul {
+ul.navbar__menu,
+ul.categ__btn {
   font-weight: var(--weight-regular);
   list-style: none;
   padding-left: 0;
@@ -78,14 +82,16 @@ p {
 }
 
 /* Navbar */
-
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #f7f7f7;
   align-items: center;
   color: var(--color-navy);
   padding: 0 50px 0 50px;
+  transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__menu {
@@ -105,6 +111,15 @@ p {
 
 .navbar__menu__item:hover {
   color: var(--color-yellow);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  /* top: 27px; */
+  right: 32px;
+  font-size: 22px;
+  color: var(--color-navy);
+  display: none;
 }
 
 /* About */
@@ -141,7 +156,7 @@ p {
 }
 
 .section2 {
-  padding: 50px 0;
+  padding: 17px 0;
   text-align: center;
 }
 
@@ -234,7 +249,7 @@ h1.skills {
   font-weight: var(--weight-bold);
 }
 
-.project__logo {
+/* probs delete .project__logo {
   color: var(--color-white);
   margin: 0px;
   font-weight: var(--weight-regular);
@@ -246,12 +261,13 @@ h1.skills {
 
 .project__logo:hover {
   color: var(--color-yellow);
-}
+} */
 
-img.project {
+.project__logo {
   width: 450px;
   height: 450px;
   border-radius: 80%;
+  margin-right: 40px;
 }
 
 .project__icon {
@@ -276,5 +292,51 @@ img.project {
 }
 
 .contact__rights {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: var(--weight-regular);
+}
+
+.contact__links,
+.contact__rights {
+  padding: 10px;
+}
+
+a {
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    padding: 6vw;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .skills__skillset {
+    flex-direction: column;
+  }
+
+  .skillset__programming,
+  .skillset__language {
+    margin-bottom: 38px;
+  }
+
+  .project__logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 80%;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
 }
