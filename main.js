@@ -34,8 +34,18 @@ document.addEventListener('scroll', () => {
     about.style.opacity = 1- window.scrollY / aboutHeight;
 })
 
+//Scroll to thesis/projects when tapping on the portfolio category
+const portfolioCateg = document.querySelector('.portfolio__categ');
+portfolioCateg.addEventListener('click', (event) => {
+    
+    const target = event.target;
+    const link = target.dataset.link;
+    if(link == null) {
+        return;
+    }
 
-
+    scrollIntoView(link);
+});
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);

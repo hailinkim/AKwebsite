@@ -87,87 +87,92 @@
             <h1 class="portfolio">PORTFOLIO</h1>
 
             <div class="portfolio__categ">
-                <ul class="categ__btn">
-                    <li class="categ__btn__item">THESIS</li>
-                    <li class="categ__btn__item">·</li>
-                    <li class="categ__btn__item">PROJECTS</li>
+                <ul class="portfolio__categ">
+                    <li class="portfolio__categ__item" data-link="#thesis">THESIS</li>
+                    <li class="portfolio__categ__item">·</li>
+                    <li class="portfolio__categ__item" data-link="#projects">PROJECTS</li>
                 </ul>
             </div>
 
-            <div class="portfolio__projects">
-                <div class="project">
-                    <h2 class="project__title">Analysis of Spatial Density Utilizing The Big Data of Floating Population of Seoul City</h2>
-                    <ul class="project__description">
-                        <li class="project__description__bullet">Analyzed foreign tourists’ mobile phone call record data set to explore tourist behavior in Seoul, Korea</li>
-                        <li class="project__description__bullet">Performed data visualization based on the tourists' relative density on a map using Tableau and QGIS</li>
-                        <li class="project__description__bullet">Provided data-driven solutions to address inconveniences often experienced by foreign tourists</li>
-                    </ul>
-                    <p class="project__hashtag">#Data Science #GIS #R #QGIS #Tableau</p>
-                    <a href="https://github.com/hailinkim/thesis" class="project__icon" target="blank">
-                        <i class="fab fa-github"></i>
-                        >
-                    </a>
+            <section id="thesis">
+                <div class="portfolio__thesis">
+                    <div class="thesis">
+                        <h2 class="thesis__title">Analysis of Spatial Density Utilizing The Big Data of Floating Population of Seoul City</h2>
+                        <ul class="thesis__description">
+                            <li class="thesis__description__bullet">Analyzed foreign tourists’ mobile phone call record data set to explore tourist behavior in Seoul, Korea</li>
+                            <li class="thesis__description__bullet">Performed data visualization based on the tourists' relative density on a map using Tableau and QGIS</li>
+                            <li class="thesis__description__bullet">Provided data-driven solutions to address inconveniences often experienced by foreign tourists</li>
+                        </ul>
+                        <p class="thesis__hashtag">#Data Science #GIS #R #QGIS #Tableau</p>
+                        <a href="https://github.com/hailinkim/thesis" class="thesis__icon" target="blank">
+                            <i class="fab fa-github"></i>
+                            >
+                        </a>
+                    </div>
+                    <img src="img/research.png" alt="" class="thesis__logo">
                 </div>
-                <img src="img/research.png" alt="" class="project__logo">
-            </div>
+            </section>
+            
 
-
-            <div class="portfolio__projects">
-                <img src="img/project/calendar.png" alt="" class="project__logo">
-                <div class="project">
-                    <h2 class="project__title">Calendar: How do I spend my time?</h2>
-                    <p class="project__description">Collected and wrangled the data set exported from Google calendar to create data visualizations using R dplyr, lubridate and ggplot2 packages and track how I spend my time during remote learning</p>
-                    <p class="project__hashtag">#Data Science  #R</p>
-                    <a href="https://github.com/hailinkim/stat231_Calendar" class="project__icon" target="blank">
-                        <i class="fab fa-github"></i>
-                        >
-                    </a>
+            <section id="projects">
+                <div class="portfolio__projects">
+                    <img src="img/project/calendar.png" alt="" class="project__logo">
+                    <div class="project">
+                        <h2 class="project__title">Calendar: How do I spend my time?</h2>
+                        <p class="project__description">Collected and wrangled the data set exported from Google calendar to create data visualizations using R dplyr, lubridate and ggplot2 packages and track how I spend my time during remote learning</p>
+                        <p class="project__hashtag">#Data Science  #R</p>
+                        <a href="https://github.com/hailinkim/stat231_Calendar" class="project__icon" target="blank">
+                            <i class="fab fa-github"></i>
+                            >
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="portfolio__projects">
-                <div class="project">
-                    <h2 class="project__title">Bike Share Demand Prediction</h2>
-                    <ul class="project__description">
-                        <li class="project__description__bullet">Generated multiple regression models in R to predict bike sharing demand based on weather and temporal factors</li>
-                        <li class="project__description__bullet">Performed a permutation test with R-squared to evaluate the statistical significance of the models</li>
-                    </ul>
-                    <p class="project__hashtag">#Data Science  #R</p>
-                    <a href="https://github.com/hailinkim/cs111_Poker" class="project__icon" target="blank">
-                        <i class="fab fa-github"></i>
-                        >
-                    </a>
+    
+    
+                <div class="portfolio__projects">
+                    <div class="project">
+                        <h2 class="project__title">Bike Share Demand Prediction</h2>
+                        <ul class="project__description">
+                            <li class="project__description__bullet">Generated multiple regression models in R to predict bike sharing demand based on weather and temporal factors</li>
+                            <li class="project__description__bullet">Performed a permutation test with R-squared to evaluate the statistical significance of the models</li>
+                        </ul>
+                        <p class="project__hashtag">#Data Science  #R</p>
+                        <a href="https://github.com/hailinkim/cs111_Poker" class="project__icon" target="blank">
+                            <i class="fab fa-github"></i>
+                            >
+                        </a>
+                    </div>
+                    <img src="img/bike.png" alt="" class="project__logo">
                 </div>
-                <img src="img/bike.png" alt="" class="project__logo">
-            </div>
-
-
-            <div class="portfolio__projects">
-                <img src="img/stock.png" alt="" class="project__logo">
-                <div class="project">
-                    <h2 class="project__title">S&P 500 Stock Price</h2>
-                    <p class="project__description">Developed an interactive web application that allows users to investigate the performance of the S&P 500 stocks using R Shiny package</p>
-                    <p class="project__hashtag">#Data Science #R #Shiny App</p>
-                    <a href="https://github.com/hailinkim/stat231_Calendar" class="project__icon" target="blank">
-                        <i class="fab fa-github"></i>
-                        >
-                    </a>
+    
+    
+                <div class="portfolio__projects">
+                    <img src="img/stock.png" alt="" class="project__logo">
+                    <div class="project">
+                        <h2 class="project__title">S&P 500 Stock Price</h2>
+                        <p class="project__description">Developed an interactive web application that allows users to investigate the performance of the S&P 500 stocks using R Shiny package</p>
+                        <p class="project__hashtag">#Data Science #R #Shiny App</p>
+                        <a href="https://github.com/hailinkim/stat231_Calendar" class="project__icon" target="blank">
+                            <i class="fab fa-github"></i>
+                            >
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- <div class="portfolio__projects">
-                <div class="project">
-                    <h2 class="project__title">Library Seat Reservation System</h2>
-                    <p class="project__description">Collected and wrangled data from Google Calendar to analyze how I spend my time</p>
-                    <p class="project__hashtag">#Python</p>
-                    <a href="https://github.com/hailinkim/stat231_Calendar" class="project__icon" target="blank">
-                        <i class="fab fa-github"></i>
-                        >
-                    </a>
-                </div>
-                <img src="img/library.jpg" alt="" class="project">
-            </div> -->
+    
+                <!-- <div class="portfolio__projects">
+                    <div class="project">
+                        <h2 class="project__title">Library Seat Reservation System</h2>
+                        <p class="project__description">Collected and wrangled data from Google Calendar to analyze how I spend my time</p>
+                        <p class="project__hashtag">#Python</p>
+                        <a href="https://github.com/hailinkim/stat231_Calendar" class="project__icon" target="blank">
+                            <i class="fab fa-github"></i>
+                            >
+                        </a>
+                    </div>
+                    <img src="img/library.jpg" alt="" class="project">
+                </div> -->
+            </section>
+            
         </div> 
     </section>
 

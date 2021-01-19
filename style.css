@@ -35,7 +35,7 @@ a {
 }
 
 ul.navbar__menu,
-ul.categ__btn {
+ul.portfolio__categ {
   font-weight: var(--weight-regular);
   list-style: none;
   padding-left: 0;
@@ -202,28 +202,28 @@ h1.skills {
 #portfolio {
   background-color: var(--color-navy);
   color: var(--color-white);
+  transition: all var(--animation-duration) ease-in-out;
 }
 
 .portfolio__categ {
   justify-content: center;
-}
-
-.categ__btn {
   display: flex;
   justify-content: center;
   margin: auto;
+  width: 100%;
 }
 
-.categ__btn__item {
+.portfolio__categ__item {
   padding: 15px 5px;
   margin: 0px 5px;
   cursor: pointer;
 }
 
-.categ__btn__item:hover {
+.portfolio__categ__item:hover {
   color: var(--color-yellow);
 }
 
+.portfolio__thesis,
 .portfolio__projects {
   display: flex;
   align-items: center;
@@ -231,19 +231,23 @@ h1.skills {
   color: var(--color-beige);
 }
 
-.project {
+.project,
+.thesis {
   margin: 0 50px;
   text-align: left;
 }
 
+.thesis__title,
 .project__title {
   color: var(--color-yellow);
 }
 
+.thesis__description,
 .project__description {
   font-weight: var(--weight-regular);
 }
 
+.thesis__hashtag,
 .project__hashtag {
   padding: 15px 0 0 0;
   color: var(--color-yellow);
@@ -264,13 +268,16 @@ h1.skills {
   color: var(--color-yellow);
 } */
 
+.thesis__logo,
 .project__logo {
   width: 450px;
   height: 450px;
   border-radius: 80%;
   margin-right: 40px;
+  margin-left: 40px;
 }
 
+.thesis__icon,
 .project__icon {
   color: var(--color-white);
   margin: 0px;
@@ -278,6 +285,7 @@ h1.skills {
   font-size: 20px;
 }
 
+.thesis__icon,
 .project__icon:hover {
   color: var(--color-yellow);
 }
@@ -328,11 +336,13 @@ a {
     flex-direction: column;
   }
 
-  .skillset__programming,
-  .skillset__language {
-    margin-bottom: 38px;
+  .skillset__description {
+    margin-bottom: 60px;
   }
 
+  #skills {
+    padding: 100px 0 0 0;
+  }
   .project__logo {
     width: 300px;
     height: 300px;
