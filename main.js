@@ -34,11 +34,15 @@ navbarMenu.addEventListener('click', (event) => {
 });
 
 //Navbar toggle button
-const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+const navbarToggleBtn = document.querySelector('.container');
 navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
 })
 
+//Navbar toggle animation
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
 
 //Make about gradually fade to transparent as the window scolls down
 const about = document.querySelector('.about__container');
