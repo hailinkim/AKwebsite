@@ -133,6 +133,7 @@ p {
   display: inline-block;
 }
 
+/* Navbar Toggle Button */
 .navbar__toggle-btn {
   position: absolute;
   top: 22px;
@@ -158,8 +159,8 @@ p {
 
 /* Rotate first bar */
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 7px);
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-8px, 7px);
 }
 
 /* Fade out the second bar */
@@ -196,8 +197,14 @@ p {
   color: var(--color-white);
   max-width: 1200px;
 }
+
 .highlight {
-  color: #9c824a;
+  color: #e8c16d;
+}
+
+.highlight2 {
+  color: #e8c16d;
+  font-style: italic;
 }
 
 /* Sections in common */
@@ -238,22 +245,6 @@ h1.skills {
   color: var(--color-navy);
   margin-bottom: 5px;
 }
-
-/* .skills__bootcamp {
-  color: var(--color-beige);
-  text-align: start;
-  padding: 80px;
-  background-color: var(--color-navy);
-  margin: 0;
-}
-
-.bootcamp__name,
-.bootcamp__description {
-  font-weight: var(--weight-regular);
-}
-.title {
-  font-weight: var(--weight-semibold);
-} */
 
 /* Portfolio */
 #portfolio {
@@ -297,6 +288,7 @@ h1.skills {
 .thesis__title,
 .project__title {
   color: var(--color-yellow);
+  margin: 0 0 5px 0;
 }
 
 .thesis__description,
@@ -304,26 +296,17 @@ h1.skills {
   font-weight: var(--weight-regular);
 }
 
+.project__hashtags {
+  display: flex;
+}
+
 .thesis__hashtag,
 .project__hashtag {
-  padding: 15px 0 5px 0;
+  margin: 0px 7px 0 0;
   color: var(--color-yellow);
-  font-weight: var(--weight-bold);
-}
-
-/* probs delete .project__logo {
-  color: var(--color-white);
-  margin: 0px;
   font-weight: var(--weight-regular);
-  font-size: 20px;
-  text-align: right;
-  width: 15%;
-  height: 15%;
+  font-size: var(--font-small);
 }
-
-.project__logo:hover {
-  color: var(--color-yellow);
-} */
 
 .thesis__logo,
 .project__logo {
@@ -359,11 +342,6 @@ h1.skills {
 #contact {
   background-color: #f7f7f7;
 }
-
-/* .contact__title {
-  padding: 0 0 15px 0;
-  font-size: 35px;
-} */
 
 .contact__rights {
   font-size: var(--font-small);
@@ -414,6 +392,11 @@ a {
     font-size: 15px;
   }
 
+  .thesis__hashtag,
+  .project__hashtag {
+    font-size: 12px;
+  }
+
   .thesis__title,
   .project__title {
     font-size: 16px;
@@ -424,6 +407,7 @@ a {
     padding: 0 0 0 20px;
   }
 
+  /* navbar */
   .navbar__logo {
     flex: 1 0 calc(100% - 50px);
     width: calc(100% - 50px);
@@ -437,7 +421,7 @@ a {
   }
 
   #navbar {
-    padding: 6vw;
+    padding: 20px;
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-beige);
