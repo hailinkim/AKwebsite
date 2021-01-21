@@ -485,6 +485,11 @@ a {
   }
 
   .thesis__title,
+  .project__title {
+    font-size: 18px;
+  }
+
+  .thesis__title,
   .thesis__description,
   .project__title,
   .project__description {
