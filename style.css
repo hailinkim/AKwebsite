@@ -37,6 +37,7 @@ html,
 body {
   position: relative;
   overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -57,19 +58,19 @@ ul.portfolio__categ {
   display: flex;
 }
 
-button {
-  font-family: "Poppins", sans-serif;
+/* button { */
+/* font-family: "Poppins", sans-serif;
   background-color: transparent;
   cursor: pointer;
   color: var(--color-beige);
   border: none;
   outline: none;
   font-weight: 300;
-  font-size: 14px;
-  /* display: block;
+  font-size: 14px; */
+/* display: block;
   margin: auto;
   align-items: center; */
-}
+/* } */
 
 /* Typography */
 
@@ -120,7 +121,7 @@ p {
   cursor: pointer;
 }
 
-.navbar__menu__item.selected {
+.navbar__menu__item.active {
   color: var(--color-yellow);
 }
 
@@ -134,9 +135,9 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 27px;
+  top: 22px;
   right: 32px;
-  display: inline-block;
+  display: none;
 }
 
 .container {
@@ -201,8 +202,9 @@ p {
 
 /* Sections in common */
 .section {
-  padding: 100px 16px;
+  padding: 100px;
   text-align: center;
+  width: 100%;
 }
 
 .section2 {
@@ -216,10 +218,15 @@ p {
 }
 
 /* Skills */
+#skills {
+  cursor: auto;
+}
+
 h1.skills {
   color: var(--color-navy);
   margin: 0 0 50px 0;
 }
+
 .skills__skillset {
   display: flex;
   justify-content: space-around;
@@ -359,7 +366,7 @@ h1.skills {
 } */
 
 .contact__rights {
-  font-size: 16px;
+  font-size: var(--font-small);
   font-weight: var(--weight-regular);
 }
 
@@ -377,14 +384,53 @@ a {
   margin: 5px;
 }
 
+.thesis,
+.project {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
 @media screen and (max-width: 768px) {
+  :root {
+    --font-large: 30px;
+    --font-medium: 20px;
+    --font-regular: 16px;
+    --font-small: 14px;
+  }
+
+  /* Typography */
+  .about__name {
+    font-size: var(--font-large);
+    margin-bottom: 1px;
+  }
+
+  .about__title {
+    font-size: 21px;
+  }
+
+  .about__description {
+    font-size: 15px;
+  }
+
+  .thesis__title,
+  .project__title {
+    font-size: 16px;
+  }
+  .thesis__description,
+  .project__description {
+    font-size: 13px;
+    padding: 0 0 0 20px;
+  }
+
   .navbar__logo {
     flex: 1 0 calc(100% - 50px);
     width: calc(100% - 50px);
   }
-  /* .navbar__toggle-btn {
+  .navbar__toggle-btn {
     display: block;
-  } */
+  }
 
   .container {
     display: block;
@@ -408,6 +454,10 @@ a {
     display: block;
   }
 
+  #about {
+    padding: 250px 17px 200px 25px;
+  }
+
   .skills__skillset {
     flex-direction: column;
   }
@@ -419,6 +469,28 @@ a {
   #skills {
     padding: 100px 0 0 0;
   }
+
+  #portfolio {
+    padding: 100px 20px 20px 20px;
+    width: 100%;
+  }
+
+  .portfolio__categ {
+    font-size: var(--font-small);
+  }
+
+  .section__container {
+    width: 100%;
+  }
+
+  .thesis,
+  .project {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+
   .thesis__logo,
   .project__logo {
     width: 300px;
@@ -428,11 +500,45 @@ a {
     margin-left: 40px;
   }
 
-  .portfolio__thesis {
-    display: flex;
+  .thesis__title,
+  .thesis__description,
+  .project__title,
+  .project__description {
+    text-align: justify;
+    /* white-space: pre-wrap; */
   }
 
-  .thesis__logo {
-    float: left;
+  .thesis__description,
+  .project__description {
+    line-height: 1.7em;
   }
+
+  p.project__description {
+    padding: 0;
+  }
+
+  .portfolio__thesis,
+  .portfolio__projects {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .thesis__logo,
+  .project__logo {
+    order: 1;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .thesis,
+  .project {
+    order: 2;
+  }
+
+  /* .portfolio__thesis:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  } */
 }
