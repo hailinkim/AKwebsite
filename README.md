@@ -1,4 +1,3 @@
 # AKwebsite
 
-Angelica's personal website
-testing
+My personal website, written in **Javascript, HTML and CSS**
