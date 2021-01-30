@@ -294,6 +294,7 @@ h1.skills {
 .thesis__description,
 .project__description {
   font-weight: var(--weight-regular);
+  margin: 0 0 5px 0;
 }
 
 .project__hashtags {
@@ -324,8 +325,22 @@ h1.skills {
   font-weight: var(--weight-regular);
   font-size: 20px;
   transition: all var(--animation-duration) ease-in-out;
-  padding: 20px 0;
+  padding: 0;
   line-height: 20px;
+}
+
+.thesis__icon2 {
+  color: var(--color-white);
+  margin: 0 10px 0 0;
+  font-weight: var(--weight-regular);
+  font-size: 20px;
+  transition: all var(--animation-duration) ease-in-out;
+  padding: 0;
+  line-height: 20px;
+  width: 22%;
+  height: 22%;
+  position: relative;
+  top: 4px;
 }
 
 .thesis__icon:hover {
