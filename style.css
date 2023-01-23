@@ -189,7 +189,14 @@ p {
 .about__title {
   font-weight: var(--weight-bold);
   font-size: 30px;
-  margin: 0;
+  margin: 0 0 15px;
+}
+.about__contact.active {
+  color: var(--color-yellow);
+}
+
+.about__contact:hover {
+  color: var(--color-yellow);
 }
 .about__description {
   font-weight: var(--weight-regular);
