@@ -189,7 +189,7 @@ p {
 .about__title {
   font-weight: var(--weight-bold);
   font-size: 30px;
-  margin: 0 0 45px;
+  margin: 0;
 }
 .about__description {
   font-weight: var(--weight-regular);
