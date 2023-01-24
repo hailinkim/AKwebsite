@@ -176,7 +176,8 @@ p {
 
 /* About */
 #about {
-  background: url("img/background4.001.png") center/cover;
+  background: url("img/background4.001.png"); /*center/cover;*/
+  background-size: 300px 100px;
   padding: 250px 25px 250px 50px;
   /* text-align: center; */
   color: var(--color-white);
@@ -188,13 +189,9 @@ p {
 }
 .about__title {
   font-weight: var(--weight-bold);
-  font-size: 30px;
+  font-size: 30px; 
   margin: 0 0 15px;
 }
-.about__contact.active {
-  color: var(--color-yellow);
-}
-
 .fa-github:hover {
   color: var(--color-yellow);
 }
