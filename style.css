@@ -195,7 +195,7 @@ p {
   color: var(--color-yellow);
 }
 
-.about__contact:hover {
+.fa-github:hover {
   color: var(--color-yellow);
 }
 .about__description {
