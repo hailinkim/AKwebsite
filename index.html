@@ -38,6 +38,7 @@
                 <li class="navbar__menu__item" data-link="#work">WORK</li>
                 <li class="navbar__menu__item" data-link="#projects">PROJECTS</li>
                 <li class="navbar__menu__item" data-link="#research">RESEARCH</li>  
+                <li class="navbar__menu__item" data-link="#contact">CONTACT</li>  
             </ul>
 
             <!-- Toggle button -->
@@ -54,109 +55,173 @@
         <section id="about">
             <div class="about__container">
                 <h1 class="about__name">Hi, I'm <span class="highlight">Angelica</span>.</h1>
-                <h2 class="about__title">Data Scientist</h2>
-                <div class="about__contact">
-                    <a href="https://github.com/hailinkim" target="blank">
+                <!-- <h2 class="about__title">Data Scientist</h2> -->
+                <!-- <div class="about__contact">
+                    <a href="https://github.com/hailinkim" class="about__contact" target="blank">
                         <i class="fab fa-github" style="font-size:24px;color:white"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/angelica-hailin-kim-966342203/" target="blank">
+                    <a href="https://www.linkedin.com/in/angelica-hailin-kim-966342203/" class="about__contact" target="blank">
                         <i class="fab fa-linkedin" style="font-size:24px;color:white"></i>
                     </a>
-                    <a href="mailto: haikim20@amherst.edu">
+                    <a href="mailto: haikim20@amherst.edu" class="about__contact" target="blank">
                         <i class="fas fa-envelope" style="font-size:24px;color:white"></i>
                     </a>
-                </div>
-                <h3 class="about__description">A junior pursuing a double-major in <span class="highlight2">Computer Science</span> and <span class="highlight2">Statistics</span> at Amherst College. <br/> 
-                I am a tenacious problem solver who enjoys collaborating on finding answers from data.</h3>
-            </div>
-        </section>
-
-        <!-- Tech Stack -->
-        <section id="skills" class="section container">
-            <h1 class="skills">Tech Stack</h1>
-            <div class="skills__skillset">
-                <div class="skillset__programming">
-                    <h2 class="skillset__title">Programming</h2>
-                    <p class="skillset__description">Python | Java | R | SQL | Tableau <br/> HTML | CSS | JavaScript</p>
-                </div>
-                <!-- <div class="skillset__language">
-                    <h2 class="skillset__title"> Culture & Language</h2>
-                    <p class="skillset__description">English | Korean | Japanese | Chinese <br/> Cultural Heritage Guide</p>
                 </div> -->
+                <h3 class="about__description">A tenacious problem solver who enjoys collaborating on finding answers from data</h3>
+                <h3 class="about__description">Pursuing a double-major in <span class="highlight">Computer Science</span> and <span class="highlight">Statistics</span> at Amherst College (Class of 2024)</h3>
+                
             </div>
         </section>
 
         <section id="work" class="section">
             <div class="section__container">
-                <h1 class="portfolio">Work Experience</h1>
-
-                <div class="portfolio__categ">
-                    <ul class="portfolio__categ">
-                        <li class="portfolio__categ__item" data-link="#thesis">RESEARCH</li>
-                        <li class="portfolio__categ__item">·</li>
-                        <li class="portfolio__categ__item" data-link="#projects">PROJECTS</li>
-                    </ul>
+                <h1 class="skills">Work Experience</h1>
+                <div class="skills__skillset">
+                    <div class="skillset__industry">
+                        <h2 class="skillset__title">Industry</h2>
+                        <div class="skillset__description">
+                            <img src="img/hatchery.png" class="work__logo" alt="" width="170" height="120"> 
+                                <h3 class="work__position">Data Science Intern</h3>
+                                <h4 class="work__time">September 2022 - Present</h4>
+                                <ul class="work__description">
+                                    <li class="work__description"> Collaborated on a feature engineering project for agricultural crop price forecasting at an agritech startup that develops algorithmic B2B sourcing and trading strategies.</li>
+                                    <li class="work__description"> Analyzed the market transaction time series data in <b>Python</b> and <b>SQL</b> to statistically create features that improve the performance of the ML-based price prediction model. </li>
+                                </ul>
+                        </div>
+                        <div class="skillset__description">
+                            <img src="img/bcg.png" class="work__logo" alt="" width="230" height="80">
+                            <h3 class="work__position">Data Science Consulting Intern</h3>
+                            <h4 class="work__time">May 2022 - August 2022</h4>
+                            <p class="work__description"> Conducted a large-scale statistical analysis of 14M+ policyholder data in <b>Python</b> and <b>SQL</b> to develop data-driven sales improvement strategies for a leading property & casualty insurance company. </p>
+                        </div>
+                    </div>
+                    <div class="skillset__academia">
+                        <h2 class="skillset__title"> Academia</h2>
+                        <div class="skillset__description">
+                            <img src="img/acdmammoths.png" class="work__logo" alt="" width="150" height="120">
+                                <h2 class="work__title">Amherst College Data* Mammoths</h2>
+                                <h3 class="work__position">Student Researcher</h3>
+                                <h4 class="work__time">January 2023 - Present</h4>
+                                <p class="work__description"> Building algorithms for statistically-sound knowledge discovery using <b>R</b>, <b>Java</b>, and <b>Python</b> under the mentorship of <a href="https://matteo.rionda.to/" class="work__description">Professor Matteo Riondato</a> (Previous Researcher @<a href="https://www.twosigma.com/" class="work__description">Two Sigma</a>). </p>
+                        </div>
+                        <div class="skillset__description">
+                            <img src="img/amherst.png" class="work__logo" alt="" width="100" height="100">
+                                <h2 class="work__title">Amherst College Statistics Department</h2>
+                                <h3 class="work__position">Gregory S. Call Academic Intern</h3>
+                                <h4 class="work__time">September 2022 - Present</h4>
+                                <p class="work__description"> Conducted literature review to investigate the data-generating mechanisms of individually randomized group-treatment trials (IRGT), supporting <a href = "https://bebailey.github.io/" class="work__description">Professor Brittany Bailey</a>’s research on tackling the inevitable problems of nested clinical trials. </p>
+                        </div>
+                        <div class="skillset__description">
+                            <img src="img/amherst.png" class="work__logo" alt="" width="100" height="100">
+                                <h2 class="work__title">Amherst College Computer Science Department</h2>
+                                <h3 class="work__position">Teaching Assistant</h3>
+                                <h4 class="work__time">September 2022 - December 2022</h4>
+                                <!-- <p class="project__description"> ; </p> -->
+                                <ul class="work__description">
+                                    <li class="work__description"> Supported lab sessions to guide students though difficult class concepts for Introduction to Computer Science II.</li>
+                                    <li class="work__description"> Held weekly office hours to provide one-on-one support for the students struggling with lab assignments in <b>Java</b>. </li>
+                                </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Portfolio -->
-        <section id="portfolio" class="section">
+        <section id="projects" class="section">
             <div class="section__container">
-                <h1 class="portfolio">PORTFOLIO</h1>
+                <h1 class="portfolio">Projects</h1>
 
-                <div class="portfolio__categ">
+                <!-- <div class="portfolio__categ">
                     <ul class="portfolio__categ">
                         <li class="portfolio__categ__item" data-link="#thesis">RESEARCH</li>
                         <li class="portfolio__categ__item">·</li>
                         <li class="portfolio__categ__item" data-link="#projects">PROJECTS</li>
                     </ul>
-                </div>
+                </div> -->
 
                 <section id="thesis">
-                    <div class="portfolio__thesis">
-                        <div class="thesis">
+                    <div class="portfolio__projects">
+                        <div class="project">
                             <div class="project__hashtags">
-                                <h3 class="project__hashtag">#Data Science </h3>
-                                <h3 class="project__hashtag">#GIS </h3>
-                                <h3 class="project__hashtag">#R </h3>
-                                <h3 class="project__hashtag">#QGIS </h3>
-                                <h3 class="project__hashtag">#Tableau </h3>
+                                <h3 class="project__hashtag">#Tensorflow </h3>
+                                <h3 class="project__hashtag">#Keras </h3>
+                                <h3 class="project__hashtag">#Pandas </h3>
+                                <h3 class="project__hashtag">#Numpy </h3>
                             </div>
-                            <h2 class="thesis__title">Analysis of Spatial Density Utilizing The Big Data of Floating Population of Seoul City</h2>
-                            <ul class="thesis__description">
-                                <li class="thesis__description__bullet">Analyzed foreign tourists’ mobile phone call record data set to address inconveniences often experienced by foriegn tourists in Seoul</li>
-                                <li class="thesis__description__bullet">Used Tableau to create a dashboard that tracks travel patterns by nationality and time  </li>
-                                <li class="thesis__description__bullet">Formulated a policy proposal on marketing different segments of tourists to promote cultural heritage tourism, adopted by Cultural Heritage Administration of Korea</li>
+                            <h2 class="project__title">Agricultural Crop Price Prediction</h2>
+                            <ul class="project__description">
+                                <li class="project__description__bullet">Built LSTM models to perform crop price forecasting from the 3-year Korean agricultural market transaction time series data</li>
+                                <li class="project__description__bullet">Improved the performance by 60%, relative to the ARIMA model in economics</li>
+                                <li class="project__description__bullet">Used the NVidia RTX A5000 GPU Server on the<a href="https://www.amherst.edu/offices/it/academic-technology-services/tools/analysis-and-programming/computing-cluster/new-high-performance-computing-cluster" class="project__description__bullet">Amherst College High-Performance Computing Cluster</a>for training the models</li>
                             </ul>
-                            <a href="https://public.tableau.com/profile/angelica.kim1227#!/vizhome/TouristBehavior/Dashboard2?publish=yes" class="thesis__icon2" target="blank">
-                                <img src="img/tableau.png" alt="" class="thesis__icon2">
-                                
-                            </a>
-                            <a href="https://github.com/hailinkim/thesis" class="thesis__icon" target="blank">
+                            <!-- <p class = "project__description">Built LSTM models to perform crop price forecasting, improving the accuracy by 60% relative to the AutoRegressive Integrated Moving Average (ARIMA) models</p> -->
+                            <a href="https://github.com/hailinkim/cs247_Agricultural-Crop-Price-Prediction" class="project__icon" target="blank">
                                 <i class="fab fa-github"></i>
                                 >
                             </a>
                         </div>
-                        <div class="thesis__logo">
-                            <img src="img/research.png" alt="" class="thesis__logo">
-                        </div>
+                        <img src="img/crop_price.png" alt="" class="project__logo">
                     </div>
-                </section>
 
-                <section id="projects">
                     <div class="portfolio__projects">
-                        <img src="img/map.png" alt="" class="project__logo">
+                        <img src="img/crop_quality.jpg" alt="" class="project__logo">
                         <div class="project">
                             <div class="project__hashtags">
-                                <h3 class="project__hashtag">#R Shiny </h3>
+                                <h3 class="project__hashtag">#R </h3>
                             </div>
-                            <h2 class="project__title">Health Care Equity</h2>
-                            <p class="project__description"> Developed an interactive web application that allows users to explore disparities in access to mental health care </p>
+                            <h2 class="project__title">Crop Quality Prediction</h2>
+                            <ul class="project__description">
+                                <li class="project__description__bullet">Analyzed the factors explaining crop quality to establish a data-driven quality grading system and help develop a fair value of the crops</li>
+                                <li class="project__description__bullet">Compared the performance of three classification models (decision trees, random forests, SVM)</li>
+                                <li class="project__description__bullet">Conducted factor analysis to discover latent relationships in the agricultural data that may be reflective of crop quality</li>
+                            </ul>
+                            <!-- <p class="project__description"> Developed an interactive web application that allows users to explore disparities in access to mental health care </p> -->
                             
     
-                            <a href="https://angelicakim.shinyapps.io/stat231_shiny_healthcare_equity/" class="project__icon" target="blank">
-                                <i class="fab fa-r-project"></i>
+                            <a href="https://github.com/hailinkim/stat240_Crop-Quality-Prediction" class="project__icon" target="blank">
+                                <i class="fab fa-github"></i>
+                                >
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__projects">
+                        <div class="project">
+                            <div class="project__hashtags">
+                                <h3 class="project__hashtag">#R Shiny</h3>
+                                <h3 class="project__hashtag">#dplyr </h3>
+                                <h3 class="project__hashtag">#ggplot2 </h3>
+
+                            </div>
+                            <h2 class="project__title">Health Care Equity</h2>
+                            <ul class="project__description">
+                                <li class="project__description__bullet">Deployed an interactive app and blog in group of 3 to analyze the root causes of systemic health inequities and the effectiveness of public health insurance</li>
+                                <li class="project__description__bullet">Performed spatial data visualization, clustering analysis, and text analysis using <b>R</b> and <b>Shiny</b></li>
+                            </ul>
+                            <!-- <p class = "project__description">Used R to analyze my Google calendar data and created data visualizations to track how I spend my time</p> -->
+                            <a href="https://stat231-f21.github.io/blog_aaa/" class="project__icon" target="blank">
+                                <i class="fab fa-github"></i>
+                                >
+                            </a>
+                        </div>
+                        <img src="img/healthcare.png" alt="" class="project__logo">
+                    </div>
+
+                    <div class="portfolio__projects">
+                        <img src="img/meal.png" alt="" class="project__logo" >
+                        <div class="project">
+                            <div class="project__hashtags">
+                                <h3 class="project__hashtag">#Java</h3>
+                                <h3 class="project__hashtag">#R </h3>
+                            </div>
+                            <h2 class="project__title">Val Meal Planner</h2>
+                            <ul class="project__description">
+                                <li class="project__description__bullet">Spearheaded the development of a meal planning program tailored to students' dietary needs in <b>Java</b></li>
+                                <li class="project__description__bullet">Automated the menu data collection process via web scraping in <b>R</b>, accelerating the workflow by 200%</li>
+                            </ul>
+                                <a href="https://github.com/hailinkim/cs112-val-menu-revamped" class="project__icon" target="blank">
+                                <i class="fab fa-github"></i>
                                 >
                             </a>
                         </div>
@@ -171,73 +236,59 @@
 
                             </div>
                             <h2 class="project__title">Calendar: How Do I Spend My Time?</h2>
-                            <p class = "project__description">Used R to analyze my Google calendar data and created data visualizations to track how I spend my time</p>
+                            <ul class="project__description">
+                                <li class="project__description__bullet">Constructed a time tracking report for better self-evaluation of productivity, physical and mental well-being</li>
+                                <li class="project__description__bullet">Performed data analysis, wrangling, and visualization in <b>R</b> and <b>LaTex</b></li>
+                            </ul>
                             <a href="https://github.com/hailinkim/stat231-calendar" class="project__icon" target="blank">
                                 <i class="fab fa-github"></i>
                                 >
                             </a>
                         </div>
-                        <img src="img/project/calendar.png" alt="" class="project__logo">
+                        <img src="img/calendar.png" alt="" class="project__logo">
                     </div>
-
-                    <div class="portfolio__projects">
-                        <img src="img/bike.png" alt="" class="project__logo">
-                        <div class="project">
-                            <div class="project__hashtags">
-                                <h3 class="project__hashtag">#R </h3>
-                            </div>
-                            <h2 class="project__title">Bike Share Demand Prediction</h2>
-                            <ul class="project__description">
-                                <li class="project__description__bullet">Generated multiple linear regression models in R to predict bike sharing demand based on weather and temporal factors</li>
-                                <li class="project__description__bullet">Performed a permutation test with R-squared to evaluate the statistical significance of the models</li>
-                            </ul>
-                            <a href="https://github.com/hailinkim/stat230_bikeshare" class="project__icon" target="blank">
-                                <i class="fab fa-github"></i>
-                                >
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__projects">
-                        <div class="project">
-                            <div class="project__hashtags">
-                                <h3 class="project__hashtag">#Java </h3>
-                            </div>
-                            <h2 class="project__title">Poker Hand Evaluator</h2>
-                            <p class="project__description">A Java program that creates a 5-card poker hand and evaluates 100,000 poker hands.</p>
-                            <a href="https://github.com/hailinkim/cs111_Poker" class="project__icon" target="blank">
-                                <i class="fab fa-github"></i>
-                                >
-                            </a>
-                        </div>
-                        <img src="img/poker.png" alt="" class="project__logo">
-                    </div>
-
-                    <div class="portfolio__projects">
-                        <img src="img/website.png" alt="" class="project__logo">
-                        <div class="project">
-                            <div class="project__hashtags">
-                                <h3 class="project__hashtag">#Javascript</h3>
-                                <h3 class="project__hashtag">#HTML </h3>
-                                <h3 class="project__hashtag">#CSS </h3>
-                            </div>
-                            <h2 class="project__title">Personal Website</h2>
-                            <p class="project__description">Personal website for the portfolio.</p>
-                            <a href="https://github.com/hailinkim/AKwebsite" class="project__icon" target="blank">
-                                <i class="fab fa-github"></i>
-                                >
-                            </a>
-                        </div>
-                    </div>
-
-
                 </section>
-                
             </div> 
         </section>
 
-        <!-- Contact -->
-        <!-- <section id="contact" class="section2">
+        <!-- Research -->
+        <section id="research" class="section">
+            <div class="section__container">
+                <h1 class="research__section">Research</h1>
+                <div class="research">
+                    <img src="img/research.png" alt="" class="project__logo">
+                    <div class="research__body">
+                        <div class="project__hashtags">
+                            <h3 class="project__hashtag">#R </h3>
+                            <h3 class="project__hashtag">#QGIS </h3>
+                            <h3 class="project__hashtag">#Tableau </h3>
+                        </div>
+                        <h2 class="thesis__title">Analysis of Spatial Density Utilizing The Big Data of Floating Population of Seoul City</h2>
+                        <ul class="thesis__description">
+                            <li class="thesis__description__bullet">Addressed inconveniences often experienced by foriegn tourists in Seoul, Korea, by analyzing and visualizing their travel behavior from their mobile phone call record data in <b>R</b> and <b>QGIS</b></li>
+                            <li class="thesis__description__bullet">Created a <b>Tableau dashboard</b> that tracks travel patterns by nationality and time</li>
+                            <li class="thesis__description__bullet">Formulated a policy proposal on marketing different segments of tourists to promote cultural heritage tourism, adopted by Cultural Heritage Administration of Korea</li>
+                            <li class ="thesis__description__bullet">Presented a first-authored research paper in reputed international conferences:</li>
+                            <ul class="thesis__description">
+                                <li class="thesis__description__bullet">Women in Data Science Cambridge 2021 Conference Presentation</li>
+                                <li class="thesis__description__bullet">Free and Open Source Software for Geospatial 2015 Conference Best Oral Presentation Award</li>
+                            </ul>
+                            
+                        </ul>
+                        <a href="https://public.tableau.com/profile/angelica.kim1227#!/vizhome/TouristBehavior/Dashboard2?publish=yes" class="thesis__icon2" target="blank">
+                            <img src="img/tableau.png" alt="" class="thesis__icon2">
+                            
+                        </a>
+                        <a href="https://github.com/hailinkim/thesis" class="thesis__icon" target="blank">
+                            <i class="fab fa-github"></i>
+                            >
+                        </a>
+                    </div>   
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section2">
             <div class="contact__links">
                 <a href="https://github.com/hailinkim" target="blank">
                     <i class="fab fa-github"></i>
@@ -250,9 +301,14 @@
                 </a>
             </div>
             <div class="contact__rights">
-                <p class="contact__rights">© Copyright 2021 Angelica Kim</p>
+                <p class="contact__rights">© Copyright 
+                    <span id="copyright">
+                        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                    </span>
+                    Angelica Kim
+                </p>
             </div>
-        </section> -->
+        </section>
     </div>
 </body>
 </html>

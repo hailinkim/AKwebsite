@@ -54,9 +54,9 @@ ul.portfolio__categ {
   padding-left: 0;
 }
 
-.portfolio__categ {
+/* .portfolio__categ {
   display: flex;
-}
+} */
 
 /* button { */
 /* font-family: "Poppins", sans-serif;
@@ -176,44 +176,50 @@ p {
 
 /* About */
 #about {
-  background: url("img/background4.001.png"); /*center/cover;*/
-  background-size: 300px 100px;
-  padding: 250px 25px 250px 50px;
+  background: url("img/background4.001.png") center/cover;
+  /* background-size: cover; */
+  padding: 120px 25px 80px 100px;
   /* text-align: center; */
   color: var(--color-white);
 }
 .about__name {
   font-weight: var(--weight-extrabold);
   font-size: 50px;
-  margin: 0;
+  margin: 110px 0 40px 0;
 }
 .about__title {
-  font-weight: var(--weight-bold);
+  font-weight: 350;
   font-size: 30px; 
-  margin: 0 0 15px;
+  /* margin-top: 5px; */
+  margin-bottom: 45px;
+}
+/* a.about__contact {
+  margin: 5px;
 }
 .fa-github:hover {
-  color: var(--color-yellow);
+  color: var(--color-yellow) !important;
 }
+.fa-linkedin:hover{
+  color: var(--color-yellow) !important;
+}
+.fa-envelope:hover{
+  color: var(--color-yellow) !important;
+} */
 .about__description {
   font-weight: var(--weight-regular);
   font-size: 18px;
   color: var(--color-white);
   max-width: 1200px;
+  margin: 0 0 5px 0;
 }
 
 .highlight {
   color: #e8c16d;
 }
 
-.highlight2 {
-  color: #e8c16d;
-  font-style: italic;
-}
-
 /* Sections in common */
 .section {
-  padding: 100px;
+  padding: 70px 95px 100px 95px;
   text-align: center;
   width: 100%;
 }
@@ -221,6 +227,7 @@ p {
 .section2 {
   padding: 17px 0;
   text-align: center;
+  width: 100%;
 }
 
 .section__container {
@@ -228,36 +235,71 @@ p {
   margin: auto;
 }
 
-/* Skills */
+/* Work */
 #skills {
   cursor: auto;
 }
 
 h1.skills {
   color: var(--color-navy);
-  margin: 0 0 50px 0;
+  margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .skills__skillset {
   display: flex;
-  justify-content: space-around;
-  margin: 0 0 70px 0;
+  column-gap: 90px;
+  justify-content: space-evenly;
+  margin: 0;
 }
-
-.skillset__title,
-.skillset__description {
+.skillset__industry{
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.skillset__academia{
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.skillset__title{
   color: var(--color-navy);
-  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: var(--weight-regular);
+  margin-bottom: 25px;
+}
+.work__title{
+  font-size: 22px;
+}
+.work__position{
+  margin: 0;
+  font-size: 20px
+}
+p.work__description{
+  margin-bottom: 50px;
+  text-align:left;
+}
+.work__time{
+  margin: 0 0 8px 0;
+  font-style: italic;
+  font-weight: normal;
+}
+ul.work__description{
+  margin-bottom: 50px;
+  font-weight: 200;
+}
+a.work__description{
+  font-size: var(--font-small);
+  color:#9c824a;
 }
 
-/* Portfolio */
-#portfolio {
+/* Projects */
+#projects {
   background-color: var(--color-navy);
   color: var(--color-white);
   transition: all var(--animation-duration) ease-in-out;
 }
 
-.portfolio__categ {
+
+/* .portfolio__categ {
   justify-content: center;
   display: flex;
   justify-content: center;
@@ -273,18 +315,30 @@ h1.skills {
 
 .portfolio__categ__item:hover {
   color: var(--color-yellow);
-}
+} */
 
 .portfolio__thesis,
-.portfolio__projects {
+.portfolio__projects{
   display: flex;
   align-items: center;
   padding: 40px 0;
   color: var(--color-beige);
 }
+.research{
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  color: var(--color-navy);
+}
+#research.section {
+  padding: 70px 95px 50px 95px;
+  text-align: center;
+  width: 100%;
+}
 
 .project,
-.thesis {
+.thesis,
+.research {
   margin: 0 50px;
   text-align: left;
 }
@@ -299,6 +353,11 @@ h1.skills {
 .project__description {
   font-weight: var(--weight-regular);
   margin: 0 0 5px 0;
+}
+a.project__description__bullet{
+  font-size: var(--font-small);
+  font-weight: var(--weight-bold);
+  color:var(--color-beige);
 }
 
 .project__hashtags {
@@ -322,46 +381,59 @@ h1.skills {
   margin-left: 40px;
 }
 
-.thesis__icon,
+.thesis__icon{
+  color: var(--color-navy);
+  margin: 0px;
+  font-weight: var(--weight-regular);
+  font-size: 25px;
+  transition: all var(--animation-duration) ease-in-out;
+  padding: 0;
+  line-height: 20px;
+}
+
 .project__icon {
   color: var(--color-white);
   margin: 0px;
   font-weight: var(--weight-regular);
-  font-size: 20px;
+  font-size: 25px;
   transition: all var(--animation-duration) ease-in-out;
   padding: 0;
   line-height: 20px;
 }
 
 .thesis__icon2 {
-  color: var(--color-white);
+  /* color: var(--color-white); */
   margin: 0 10px 0 0;
   font-weight: var(--weight-regular);
   font-size: 20px;
   transition: all var(--animation-duration) ease-in-out;
   padding: 0;
   line-height: 20px;
-  width: 22%;
-  height: 22%;
+  width: 20%;
+  height: 20%;
   position: relative;
   top: 4px;
 }
 
+.project__icon:hover,
 .thesis__icon:hover {
   color: var(--color-yellow);
-  font-size: 22px;
+  font-size: 27px;
 }
 
-.project__icon:hover {
-  color: var(--color-yellow);
-  font-size: 22px;
+#research {
+  background-color: #f7f7f7;
+}
+.thesis,
+.project,
+.research {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 /* Contact */
-#contact {
-  background-color: #f7f7f7;
-}
-
 .contact__rights {
   font-size: var(--font-small);
   font-weight: var(--weight-regular);
@@ -369,25 +441,14 @@ h1.skills {
 
 .contact__links,
 .contact__rights {
-  /* padding: 15px 10px 10px 10px; */
+  margin-top: 10px;
   color: var(--color-navy);
 }
 
-.contact__rights {
-  padding-bottom: 15px;
-}
-
-a {
+a{
   margin: 5px;
 }
 
-.thesis,
-.project {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
 
 @media screen and (max-width: 768px) {
   :root {
@@ -472,6 +533,7 @@ a {
   #skills {
     padding: 100px 0 0 0;
   }
+  
 
   #portfolio {
     padding: 100px 20px 20px 20px;
@@ -487,7 +549,8 @@ a {
   }
 
   .thesis,
-  .project {
+  .project,
+  .research {
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -540,7 +603,8 @@ a {
     margin-bottom: 20px;
   }
   .thesis,
-  .project {
+  .project,
+  .research {
     order: 2;
   }
 
