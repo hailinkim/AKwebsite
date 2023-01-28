@@ -44,7 +44,7 @@ a {
   text-decoration: none;
   color: var(--color-navy);
   font-weight: var(--weight-regular);
-  font-size: var(--font-medium);
+  /* font-size: var(--font-medium); */
 }
 
 ul.navbar__menu,
@@ -237,6 +237,9 @@ p {
 }
 
 /* Work */
+#work{
+  padding: 60px 95px 20px 95px;
+}
 #skills {
   cursor: auto;
 }
@@ -417,8 +420,8 @@ a.project__description__bullet{
   transition: all var(--animation-duration) ease-in-out;
   padding: 0;
   line-height: 20px;
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
   position: relative;
   top: 4px;
 }
@@ -454,8 +457,14 @@ a.project__description__bullet{
   color: var(--color-navy);
 }
 
-a{
+a.contact__icon{
   margin: 5px;
+  font-size: 23px;
+}
+
+a.contact__icon:hover{
+  color: var(--color-yellow);
+  font-size: 25px;
 }
 
 
