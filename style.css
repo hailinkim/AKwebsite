@@ -16,7 +16,7 @@
   --font-large: 40px;
   --font-medium: 24px;
   --font-regular: 18px;
-  --font-small: 16px;
+  --font-small: 14px;
 
   /* Annimation */
   --animation-duration: 300ms;
@@ -219,7 +219,7 @@ p {
 
 /* Sections in common */
 .section {
-  padding: 70px 95px 100px 95px;
+  padding: 60px 95px 100px 95px;
   text-align: center;
   width: 100%;
 }
@@ -242,8 +242,8 @@ p {
 
 h1.skills {
   color: var(--color-navy);
-  margin-bottom: 20px;
-  font-size: 35px;
+  margin-bottom: 10px;
+  font-size: 28px;
 }
 
 .skills__skillset {
@@ -262,16 +262,16 @@ h1.skills {
 }
 .skillset__title{
   color: var(--color-navy);
-  font-size: 26px;
+  font-size: 22px;
   font-weight: var(--weight-regular);
   margin-bottom: 25px;
 }
 .work__title{
-  font-size: 22px;
+  font-size: var(--font-regular);
 }
 .work__position{
   margin: 0;
-  font-size: 20px
+  font-size: 18px
 }
 p.work__description{
   margin-bottom: 50px;
@@ -279,12 +279,14 @@ p.work__description{
 }
 .work__time{
   margin: 0 0 8px 0;
+  font-size: 14px;
   font-style: italic;
   font-weight: normal;
 }
 ul.work__description{
   margin-bottom: 50px;
   font-weight: 200;
+  font-size: var(--font-small);
 }
 a.work__description{
   font-size: var(--font-small);
