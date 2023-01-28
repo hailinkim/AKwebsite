@@ -16,7 +16,7 @@
   --font-large: 30px;
   --font-medium: 20px;
   --font-regular: 18px;
-  --font-small: 16px;
+  --font-small: 15px;
 
   /* Annimation */
   --animation-duration: 300ms;
@@ -360,7 +360,7 @@ a.work__description{
   font-weight: var(--weight-regular);
   font-size: 15px;
   margin: 0 0 5px 0;
-  padding: 0 0 5px 40px;
+  padding: 0 0 0 40px;
 }
 a.project__description__bullet{
   font-size: 15px;
@@ -413,8 +413,8 @@ a.project__description__bullet{
   font-weight: var(--weight-bold);
   color:#9c824a;
 } */
-.thesis__icon2 {
-  margin: 0 10px 0 0;
+img.thesis__icon2 {
+  margin-right: 3px;
   font-weight: var(--weight-regular);
   font-size: 20px;
   transition: all var(--animation-duration) ease-in-out;
