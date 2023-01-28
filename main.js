@@ -72,7 +72,7 @@ function scrollIntoView(selector) {
     scrollTo.scrollIntoView({behavior: 'smooth'});
 }
 
-const sectionIds = ['#about', '#skills', '#portfolio', '#contact'];
+const sectionIds = ['#about', '#work', '#projects','#research', '#contact'];
 const sections = sectionIds.map(id => document.querySelector(id));
 const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
 console.log(sections);
