@@ -13,10 +13,10 @@
   --weight-regular: 300;
 
   /* font size */
-  --font-large: 40px;
-  --font-medium: 24px;
+  --font-large: 30px;
+  --font-medium: 20px;
   --font-regular: 18px;
-  --font-small: 14px;
+  --font-small: 16px;
 
   /* Annimation */
   --animation-duration: 300ms;
@@ -119,6 +119,7 @@ p {
   padding: 8px 12px;
   margin: 0px 4px;
   cursor: pointer;
+  font-size: var(--font-small);
 }
 
 .navbar__menu__item.active {
@@ -178,13 +179,13 @@ p {
 #about {
   background: url("img/background4.001.png") center/cover;
   /* background-size: cover; */
-  padding: 150px 25px 90px 100px;
+  padding: 100px 25px 60px 100px;
   /* text-align: center; */
   color: var(--color-white);
 }
 .about__name {
   font-weight: var(--weight-extrabold);
-  font-size: 50px;
+  font-size: 45px;
   margin: 110px 0 50px 0;
 }
 .about__title {
@@ -207,7 +208,7 @@ p {
 } */
 .about__description {
   font-weight: var(--weight-regular);
-  font-size: 18px;
+  font-size: 16px;
   color: var(--color-white);
   max-width: 1200px;
   margin: 0 0 5px 0;
@@ -219,7 +220,7 @@ p {
 
 /* Sections in common */
 .section {
-  padding: 60px 95px 100px 95px;
+  padding: 60px 95px 70px 95px;
   text-align: center;
   width: 100%;
 }
@@ -322,13 +323,14 @@ a.work__description{
 .portfolio__projects{
   display: flex;
   align-items: center;
-  padding: 40px 0;
+  margin-top: 30px;
+  /* padding: 40px 0; */
   color: var(--color-beige);
 }
 .research{
   display: flex;
   align-items: center;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   color: var(--color-navy);
 }
 /* #research.section {
@@ -353,12 +355,14 @@ a.work__description{
 .thesis__description,
 .project__description {
   font-weight: var(--weight-regular);
+  font-size: 15px;
   margin: 0 0 5px 0;
+  padding: 0 0 5px 40px;
 }
 a.project__description__bullet{
-  font-size: var(--font-small);
-  font-weight: var(--weight-bold);
-  color:var(--color-beige);
+  font-size: 15px;
+  /* font-weight: var(--weight-bold); */
+  color:var(--color-yellow);
 }
 
 .project__hashtags {
@@ -375,8 +379,8 @@ a.project__description__bullet{
 
 .thesis__logo,
 .project__logo {
-  width: 450px;
-  height: 450px;
+  width: 380px;
+  height: 380px;
   border-radius: 80%;
   margin-right: 40px;
   margin-left: 40px;
@@ -465,7 +469,7 @@ a{
 
   /* Typography */
   #about {
-    padding: 150px 17px 100px 25px;
+    padding: 150px 17px 60px 25px;
   }
   .about__name {
     font-size: var(--font-large);
@@ -550,7 +554,7 @@ a{
   #projects,
   #research
   {
-    padding: 100px 20px 20px 20px;
+    padding: 60px 20px 20px 20px;
     width: 100%;
   }
   h1.skills{
@@ -558,7 +562,7 @@ a{
     margin-bottom: 10px;
   }
   h2.skillset__title{
-    font-size: 23px;
+    font-size: var(--font-medium);
     margin-bottom: 15px;
   }
 
