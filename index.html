@@ -37,8 +37,7 @@
                 <li class="navbar__menu__item active" data-link="#about">ABOUT</li>
                 <li class="navbar__menu__item" data-link="#work">WORK</li>
                 <li class="navbar__menu__item" data-link="#projects">PROJECTS</li>
-                <li class="navbar__menu__item" data-link="#research">RESEARCH</li>  
-                <li class="navbar__menu__item" data-link="#contact">CONTACT</li>  
+                <li class="navbar__menu__item" data-link="#research">PUBLICATION</li>  
             </ul>
 
             <!-- Toggle button -->
@@ -57,17 +56,6 @@
             <div class="about__container">
                 <img src="img/imagination.png" class ="about__img">
                 <h1 class="about__name">Angelica Kim <a href="mailto: haikim20@amherst.edu" class="contact__icon"><i class="fas fa-envelope"></i></a><a href="https://github.com/hailinkim" target="_blank"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/angelica-hailin-kim-966342203/" target="blank" class="contact__icon"><i class="fab fa-linkedin"></i></a></h1>
-                <!-- <div class="contact__links">
-                    <a href="https://github.com/hailinkim" target="blank" class="contact__icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/angelica-hailin-kim-966342203/" target="blank" class="contact__icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto: haikim20@amherst.edu" class="contact__icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div> -->
                 <h3 class="about__major"><b>B.A.</b> in <span class="highlight"><b>Computer Science</b></span> and <span class="highlight"><b>Statistics</b></span>, Amherst College (Class of 2024).</h3>
                 <h3 class="about__intro">A tenacious problem solver who reimagines solutions by relentlessly questioning the obvious.</h3>
                 
@@ -107,7 +95,7 @@
                         </div>
                     </div>
                     <div class="skillset__academia">
-                        <h2 class="skillset__title"> Academia</h2>
+                        <h2 class="skillset__title"> Research</h2>
                         <div class="skillset__description">
                             <img src="img/amherst.png" class="work__logo" alt="" width="100" height="100">
                                 <h2 class="work__title">Amherst College Computer Science Department</h2>
@@ -146,15 +134,6 @@
         <section id="projects" class="section">
             <div class="section__container">
                 <h1 class="portfolio">Course Projects</h1>
-
-                <!-- <div class="portfolio__categ">
-                    <ul class="portfolio__categ">
-                        <li class="portfolio__categ__item" data-link="#thesis">RESEARCH</li>
-                        <li class="portfolio__categ__item">·</li>
-                        <li class="portfolio__categ__item" data-link="#projects">PROJECTS</li>
-                    </ul>
-                </div> -->
-
                 <section id="thesis">
                     <div class="portfolio__projects">
                         <div class="project">
@@ -172,7 +151,7 @@
                                 <li class="project__description__bullet">Conducted backtesting analysis to evaluate various portfolio strategies, with the XGBoost-based asset allocation yielding the highest Sharpe ratio of 3 and an annualized return of 60% in a simulated environment with no transaction costs
                                 </li>
                             </ul>
-                            <a href="https://github.com/hailinkim/stat495-content/tree/main/project" class="project__icon" target="blank">
+                            <a href="https://github.com/hailinkim/stat495_portfolio-optimization" class="project__icon" target="blank">
                                 <i class="fab fa-github"></i>
                                 >
                             </a>
@@ -195,6 +174,9 @@
                                 <li class="project__description__bullet">Deployed <a href="https://public.tableau.com/app/profile/angelica.kim1227/viz/Facilities_DB/Story1?publish=yes" target = "blank" class="project__description__bullet">Tableau dashboard</a> integrated with the database to inform facility investment decisions, featuring replacement value projection and dynamic prioritization of facilities projects based on user-specified metrics </li>
                             </ul>
                             
+                            <a href="https://public.tableau.com/app/profile/angelica.kim1227/viz/Facilities_DB/Story1?publish=yes" class="thesis__icon2" target="blank">
+                                <img src="img/tableau.png" alt="" class="project__icon">
+                            </a>
     
                             <a href="https://github.com/Bomi-Mia-Jung/Facilities_Databases_Team_Project_Repo" class="project__icon" target="blank">
                                 <i class="fab fa-github"></i>
@@ -215,7 +197,7 @@
                             <h2 class="project__title">Optimization of Bellman-Ford Algorithm using Parallel Computing </h2>
                             <p class="project__description"> Designed and tested parallel algorithm for finding single-source shortest paths in large graphs on <a href="https://www.amherst.edu/offices/it/academic-technology-services/tools/analysis-and-programming/high-performance-computing-system" target="blank" class="project__description__bullet">HPC cluster</a> using <b>SLURM</b> for job scheduling, achieving a 5x speedup compared to iterative approach via multithreading and memory access optimizations in <b>Java</b> 
                               <br>(ranked #1 in class competition for runtime performance) </p>
-                            <a href="https://github.com/hailinkim/stat240_Crop-Quality-Prediction" class="project__icon" target="blank">
+                            <a href="https://github.com/hailinkim/CS273_FinalProject" class="project__icon" target="blank">
                                 <i class="fab fa-github"></i>
                                 >
                             </a>
@@ -253,11 +235,12 @@
                             </div>
                             <h2 class="project__title">Health Care Equity</h2>
                             <ul class="project__description">
-                                <li class="project__description__bullet">Spearheaded the deployment of a data analysis blog with a two-member team for a Data Science course project, investigating the causes of health inequities in the United States and assessing the efficacy of public health insurance.</li>
+                                <li class="project__description__bullet">Spearheaded the deployment of <a href="https://hailinkim.github.io/stat231_blog/" target="blank" class="project__description__bullet"> data analysis blog</a> with a two-member team for a Data Science course project, investigating the causes of health inequities in the United States and assessing the efficacy of public health insurance.</li>
                                 <li class="project__description__bullet">Performed spatial data visualization, clustering, and text analysis using <b>R</b> and <b>Shiny</b></li>
                             </ul>
                             <!-- <p class = "project__description">Used R to analyze my Google calendar data and created data visualizations to track how I spend my time</p> -->
-                            <a href="https://stat231-f21.github.io/blog_aaa/" class="project__icon" target="blank">
+                            
+                            <a href="https://github.com/hailinkim/stat231_blog" class="project__icon" target="blank">
                                 <i class="fab fa-github"></i>
                                 >
                             </a>
@@ -280,7 +263,7 @@
                             <h3 class="project__hashtag">#QGIS </h3>
                             <h3 class="project__hashtag">#Tableau </h3>
                         </div>
-                        <h2 class="thesis__title">Analysis of Spatial Density Utilizing The Big Data of Floating Population of Seoul City</h2>
+                        <h2 class="thesis__title">Analysis of Spatial Density Utilizing The Big Data of Floating Population in Seoul</h2>
                         <ul class="thesis__description">                               
                             <li class ="thesis__description__bullet">Ranked 2nd place in the Cultural Heritage Administration Public Policy Competition 2015 for proposing a policy to enhance accessibility to cultual heritage sites by optimizing public transportation routes based on the spatial density of foreign tourists using <b>R</b>, <b>QGIS</b> and <b>Tableau</b></a></li>
                             
@@ -310,17 +293,6 @@
         </section>
 
         <section id="contact" class="section2">
-            <div class="contact__links">
-                <a href="https://github.com/hailinkim" target="blank" class = "contact__icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/angelica-hailin-kim-966342203/" target="blank" class = "contact__icon">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto: haikim20@amherst.edu" class = "contact__icon">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
             <div class="contact__rights">
                 <p class="contact__rights">© Copyright 
                     <span id="copyright">

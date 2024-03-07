@@ -16,8 +16,8 @@
   /* font size */
   --font-large: 25px;
   --font-medium: 18px;
-  --font-regular: 16px;
-  --font-small: 14px;
+  --font-regular: 17px;
+  --font-small: 15px;
 
   /* Annimation */
   --animation-duration: 300ms;
@@ -101,7 +101,7 @@ p {
 /* Navbar */
 #navbar {
   position: fixed;
-  height: 53px;
+  height: 55px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -186,8 +186,15 @@ p {
   /* text-align: center; */
   color: var(--color-navy);
 }
-.about__img{
-  width: 100%;
+.about__container{
+  justify-content: center;
+  align-items: center;
+}
+img.about__img {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   margin-top: 35px;
   justify-content: center;
   align-items: center;
@@ -452,6 +459,10 @@ a.project__description__bullet{
   transition: all var(--animation-duration) ease-in-out;
   padding: 0;
   line-height: 20px;
+}
+
+img.project__icon {
+  height: 30px;
 }
 /* a.research__icon{
   font-size: var(--font-small);
