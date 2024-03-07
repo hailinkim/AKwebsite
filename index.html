@@ -53,27 +53,30 @@
 
         <!-- About -->
         <section id="about">
+            
             <div class="about__container">
-                <h1 class="about__name">Hi, I'm <span class="highlight">Angelica</span>.</h1>
-                <!-- <h2 class="about__title">Data Scientist</h2> -->
-                <!-- <div class="about__contact">
-                    <a href="https://github.com/hailinkim" class="about__contact" target="blank">
-                        <i class="fab fa-github" style="font-size:24px;color:white"></i>
+                <img src="img/imagination.png" class ="about__img">
+                <h1 class="about__name">Angelica Kim <a href="mailto: haikim20@amherst.edu" class="contact__icon"><i class="fas fa-envelope"></i></a><a href="https://github.com/hailinkim" target="_blank"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/angelica-hailin-kim-966342203/" target="blank" class="contact__icon"><i class="fab fa-linkedin"></i></a></h1>
+                <!-- <div class="contact__links">
+                    <a href="https://github.com/hailinkim" target="blank" class="contact__icon">
+                        <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/angelica-hailin-kim-966342203/" class="about__contact" target="blank">
-                        <i class="fab fa-linkedin" style="font-size:24px;color:white"></i>
+                    <a href="https://www.linkedin.com/in/angelica-hailin-kim-966342203/" target="blank" class="contact__icon">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="mailto: haikim20@amherst.edu" class="about__contact" target="blank">
-                        <i class="fas fa-envelope" style="font-size:24px;color:white"></i>
+                    <a href="mailto: haikim20@amherst.edu" class="contact__icon">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div> -->
-                <h3 class="about__description">A tenacious problem solver who enjoys collaborating on finding answers from data.</h3>
-                <h3 class="about__description">Pursuing a double-major in <span class="highlight">Computer Science</span> and <span class="highlight">Statistics</span> at Amherst College (Class of 2024).</h3>
+                <h3 class="about__major"><b>B.A.</b> in <span class="highlight"><b>Computer Science</b></span> and <span class="highlight"><b>Statistics</b></span>, Amherst College (Class of 2024).</h3>
+                <h3 class="about__intro">A tenacious problem solver who reimagines solutions by relentlessly questioning the obvious.</h3>
                 
+                <h3 class="about__description">My academic background and research experience focus on statistical learning theory and efficient implementation of machine learning algorithms. 
+                    I demonstrated my strong statistical reasoning and programming skills to extract business insights from large-scale datasets as efficiently as possible, thriving in fast-paced, collaborative environments during my internships at Boston Consulting Group and an agritech startup. </h3>
             </div>
-        </section>
+            </section>
 
-        <section id="work" class="section">
+            <section id="work" class="section">
             <div class="section__container">
                 <h1 class="skills">Work Experience</h1>
                 <div class="skills__skillset">
@@ -81,35 +84,43 @@
                         <h2 class="skillset__title">Industry</h2>
                         <div class="skillset__description">
                             <img src="img/hatchery.png" class="work__logo" alt="" width="170" height="120"> 
-                                <h3 class="work__position">Data Science Intern</h3>
-                                <h4 class="work__time">September 2022 - Present</h4>
-                                <ul class="work__description">
-                                    <li class="work__description"> Collaborated on a feature engineering project for agricultural crop price forecasting at an agritech startup that develops algorithmic B2B sourcing and trading strategies.</li>
-                                    <li class="work__description"> Analyzed the market transaction time series data in <b>Python</b> and <b>SQL</b> to statistically create features that improve the performance of the ML-based price prediction model. </li>
-                                </ul>
+                            <h3 class="work__position">Data Science Intern</h3>
+                            <h4 class="work__time">September 2022 - May 2023</h4>
+                            <ul class="work__description">
+                                <li class="work__description">Achieved 20% improvement in accuracy of the crop price forecasting ensemble model for the agritech startup by engineering 150 new features from 10-year wholesale agricultural transaction, weather, crop production cycle, and trades data using <b>Pandas, NumPy, SQL, AWS S3</b>, and <b>Docker</b>.</li>
+                                <li class="work__description"> Identified causal predictors of crop prices that informed the startup's crop trading strategy by implementing attention-based convolutional neural network using <b>PyTorch</b>.
+                                </li>
+                            </ul>
                         </div>
                         <div class="skillset__description">
-                            <img src="img/bcg.png" class="work__logo" alt="" width="230" height="80">
+                            <img src="img/bcg.png" class="work__logo" alt="" width="200" height="80">
                             <h3 class="work__position">Data Science Consulting Intern</h3>
                             <h4 class="work__time">May 2022 - August 2022</h4>
-                            <p class="work__description"> Conducted a large-scale statistical analysis of 14M+ policyholder data in <b>Python</b> and <b>SQL</b> to develop data-driven sales improvement strategies for a leading property & casualty insurance company. </p>
+                            <ul class="work__description">
+                                <li class="work__description"> Leveraged random forest and principal component analysis on 15M+ policyholder database using <b>scikit-learn</b> to discover 50 key customer characteristics predictive of new insurance product purchases for a leading property & casualty insurer.</li>
+                                <li class="work__description"> Implemented incremental learning to train models on the large-scale policyholder database, circumventing memory constraints in the computational environment and cutting training time by 30%.
+                                </li>
+                                <li class="work__description"> Predicted 8M+ policyholders' potential connections based on Adamic Adar index using <b>networkX</b> to enhance personalized customer touchpoints based on their networks, facilitating timely purchase decisions aligned with individual needs
+                                    .
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="skillset__academia">
                         <h2 class="skillset__title"> Academia</h2>
                         <div class="skillset__description">
+                            <img src="img/amherst.png" class="work__logo" alt="" width="100" height="100">
+                                <h2 class="work__title">Amherst College Computer Science Department</h2>
+                                <h3 class="work__position">Gregory S. Call Fellow</h3>
+                                <h4 class="work__time">June 2023 - Present</h4>
+                                <p class="work__description"> Conducted honors thesis research under the guidance of Prof. Matteo Riondato on identifying invariant causal mechanisms using nonparametric hypothesis tests to improve robustness of time series forecasting in nonstationary environments.</p>
+                        </div>
+                        <div class="skillset__description">
                             <img src="img/acdmammoths.png" class="work__logo" alt="" width="150" height="120">
                                 <h2 class="work__title">Amherst College Data* Mammoths</h2>
                                 <h3 class="work__position">Student Researcher</h3>
-                                <h4 class="work__time">January 2023 - Present</h4>
-                                <p class="work__description"> Building algorithms for statistically-sound knowledge discovery using <b>R</b>, <b>Java</b>, and <b>Python</b> under the mentorship of <a href="https://matteo.rionda.to/" class="work__description">Professor Matteo Riondato</a> (Previous Researcher @<a href="https://www.twosigma.com/" class="work__description">Two Sigma</a>). </p>
-                        </div>
-                        <div class="skillset__description">
-                            <img src="img/amherst.png" class="work__logo" alt="" width="100" height="100">
-                                <h2 class="work__title">Amherst College Statistics Department</h2>
-                                <h3 class="work__position">Gregory S. Call Academic Intern</h3>
-                                <h4 class="work__time">September 2022 - Present</h4>
-                                <p class="work__description"> Conducted literature review to investigate the data-generating mechanisms of individually randomized group-treatment trials (IRGT), supporting <a href = "https://bebailey.github.io/" class="work__description">Professor Brittany Bailey</a>’s research on tackling the inevitable problems of nested clinical trials. </p>
+                                <h4 class="work__time">January 2023 - August 2023</h4>
+                                <p class="work__description"> Developed a Markov Chain Monte Carlo algorithm in <b>Java</b> for efficient sampling of binary matrices with fixed margins from a specified null distribution to facilitate hypothesis testing, as a researcher at <a href = "https://acdmammoths.github.io/" target="blank" class="work__description">Data* Mammoths</a>, an NSF-funded research group led by <a href = "https://matteo.rionda.to/" target="blank" class="work__description">Prof.Matteo Riondato</a></p>
                         </div>
                         <div class="skillset__description">
                             <img src="img/amherst.png" class="work__logo" alt="" width="100" height="100">
@@ -117,20 +128,24 @@
                                 <h3 class="work__position">Teaching Assistant</h3>
                                 <h4 class="work__time">September 2022 - December 2022</h4>
                                 <!-- <p class="project__description"> ; </p> -->
-                                <ul class="work__description">
-                                    <li class="work__description"> Supported lab sessions to guide students though difficult class concepts for Introduction to Computer Science II.</li>
-                                    <li class="work__description"> Held weekly office hours to provide one-on-one support for the students struggling with lab assignments in <b>Java</b>. </li>
-                                </ul>
+                                <p class="work__description"> Held weekly office hours and provided one-on-one support for 50+ students in Introduction to Computer Science II, covering <b>Java</b> and object-oriented programming concepts</p>
+                        </div>
+                        <div class="skillset__description">
+                            <img src="img/amherst.png" class="work__logo" alt="" width="100" height="100">
+                                <h2 class="work__title">Amherst College Statistics Department</h2>
+                                <h3 class="work__position">Gregory S. Call Academic Intern</h3>
+                                <h4 class="work__time">September 2022 - December 2022</h4>
+                                <p class="work__description"> Conducted literature review on data-generating processes of individually randomized group-treatment trials (IRGT), supporting <a href = "https://bebailey.github.io/" target="blank" class="work__description">Professor Brittany Bailey</a>’s research on tackling the inevitable problems of nested clinical trials such as within-group correlation and missing data. </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio -->
+        <!-- Portfolfio -->
         <section id="projects" class="section">
             <div class="section__container">
-                <h1 class="portfolio">Projects</h1>
+                <h1 class="portfolio">Course Projects</h1>
 
                 <!-- <div class="portfolio__categ">
                     <ul class="portfolio__categ">
@@ -144,46 +159,88 @@
                     <div class="portfolio__projects">
                         <div class="project">
                             <div class="project__hashtags">
+                                <h3 class="project__hashtag">#Pandas </h3>
+                                <h3 class="project__hashtag">#Numpy </h3>
+                                <h3 class="project__hashtag">#XGB </h3>
+                                <h3 class="project__hashtag">#Optuna </h3>
+                                <h3 class="project__hashtag">#SLURM </h3>
+                            </div>
+                            <h2 class="project__title">Enhancing Mean-Variance Portfolio Optimization with Stock Price Forecasting Using XGBoost</h2>
+                            <ul class="project__description">
+                                <li class="project__description__bullet">Authored research paper that explains mathematical underpinnings of XGBoost, with an emphasis on regularization techniques, and demonstrates its application in stock price forecasting to enhance mean-variance portfolio optimization</li>
+                                <li class="project__description__bullet">Accelerated hyperparameter tuning process by implementing Bayesian optimization methods with pruning strategies and parallelization on <a href="https://www.amherst.edu/offices/it/academic-technology-services/tools/analysis-and-programming/high-performance-computing-system" target="blank" class="project__description__bullet">HPC cluster(NVidia DGX A100 GPU)</a> using <b>SLURM</b> for job scheduling, achieving a 3x speedup compared to grid search</li>
+                                <li class="project__description__bullet">Conducted backtesting analysis to evaluate various portfolio strategies, with the XGBoost-based asset allocation yielding the highest Sharpe ratio of 3 and an annualized return of 60% in a simulated environment with no transaction costs
+                                </li>
+                            </ul>
+                            <a href="https://github.com/hailinkim/stat495-content/tree/main/project" class="project__icon" target="blank">
+                                <i class="fab fa-github"></i>
+                                >
+                            </a>
+                        </div>
+                        <img src="img/cumulative_return.png" alt="" class="project__logo">
+                    </div>
+                    <div class="portfolio__projects">
+                        <img src="img/facilities.png" alt="" class="project__logo">
+                        <div class="project">
+                            <div class="project__hashtags">
+                                <h3 class="project__hashtag">#PostgreSQL </h3>
+                                <h3 class="project__hashtag">#Linux </h3>
+                                <h3 class="project__hashtag">#Tableau </h3>
+                                <h3 class="project__hashtag">#Figma </h3>
+                            </div>
+                            <h2 class="project__title">Amherst College Facilities Database</h2>
+                            <ul class="project__description">
+                                <li class="project__description__bullet">Collaborated with Amherst College Facilities Department in a team of three to design and build <b>PostgreSQL</b> database on <b>Linux</b>, enabling comprehensive monitoring of campus facility conditions and priority calculation of repair/replacement projects
+                                </li>
+                                <li class="project__description__bullet">Deployed <a href="https://public.tableau.com/app/profile/angelica.kim1227/viz/Facilities_DB/Story1?publish=yes" target = "blank" class="project__description__bullet">Tableau dashboard</a> integrated with the database to inform facility investment decisions, featuring replacement value projection and dynamic prioritization of facilities projects based on user-specified metrics </li>
+                            </ul>
+                            
+    
+                            <a href="https://github.com/Bomi-Mia-Jung/Facilities_Databases_Team_Project_Repo" class="project__icon" target="blank">
+                                <i class="fab fa-github"></i>
+                                >
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="portfolio__projects">
+                        
+                        <div class="project">
+                            <div class="project__hashtags">
+                                <h3 class="project__hashtag">#Java </h3>
+                                <h3 class="project__hashtag">#SLURM </h3>
+                            </div>
+                            <h2 class="project__title">Optimization of Bellman-Ford Algorithm using Parallel Computing </h2>
+                            <p class="project__description"> Designed and tested parallel algorithm for finding single-source shortest paths in large graphs on <a href="https://www.amherst.edu/offices/it/academic-technology-services/tools/analysis-and-programming/high-performance-computing-system" target="blank" class="project__description__bullet">HPC cluster</a> using <b>SLURM</b> for job scheduling, achieving a 5x speedup compared to iterative approach via multithreading and memory access optimizations in <b>Java</b> 
+                              <br>(ranked #1 in class competition for runtime performance) </p>
+                            <a href="https://github.com/hailinkim/stat240_Crop-Quality-Prediction" class="project__icon" target="blank">
+                                <i class="fab fa-github"></i>
+                                >
+                            </a>
+                        </div>
+                        <img src="img/parallel.png" alt="" class="project__logo">
+                    </div>
+
+                    <div class="portfolio__projects">
+                        <img src="img/crop_price.png" alt="" class="project__logo">
+                        <div class="project">
+                            <div class="project__hashtags">
                                 <h3 class="project__hashtag">#Tensorflow </h3>
                                 <h3 class="project__hashtag">#Keras </h3>
                                 <h3 class="project__hashtag">#Pandas </h3>
                                 <h3 class="project__hashtag">#Numpy </h3>
                             </div>
                             <h2 class="project__title">Agricultural Crop Price Prediction</h2>
-                            <ul class="project__description">
-                                <li class="project__description__bullet">Built LSTM models to perform crop price forecasting from the 3-year Korean agricultural market transaction time series data</li>
-                                <li class="project__description__bullet">Improved the performance by 60%, relative to the ARIMA model in economics</li>
-                                <li class="project__description__bullet">Used the NVidia RTX A5000 GPU Server on the<a href="https://www.amherst.edu/offices/it/academic-technology-services/tools/analysis-and-programming/computing-cluster/new-high-performance-computing-cluster" class="project__description__bullet">Amherst College High-Performance Computing Cluster</a>for training the models</li>
-                            </ul>
+                            <p class="project__description">Built LSTM models on <a href="https://www.amherst.edu/offices/it/academic-technology-services/tools/analysis-and-programming/high-performance-computing-system" target="blank" class="project__description__bullet">HPC cluster(NVidia DGX A5000 GPU)</a> to predict Korean wholesale crop prices, achieving a 60% improvement in accuracy relative to the ARIMA model</p>
                             <!-- <p class = "project__description">Built LSTM models to perform crop price forecasting, improving the accuracy by 60% relative to the AutoRegressive Integrated Moving Average (ARIMA) models</p> -->
                             <a href="https://github.com/hailinkim/cs247_Agricultural-Crop-Price-Prediction" class="project__icon" target="blank">
                                 <i class="fab fa-github"></i>
                                 >
                             </a>
                         </div>
-                        <img src="img/crop_price.png" alt="" class="project__logo">
-                    </div>
-
-                    <div class="portfolio__projects">
-                        <img src="img/crop_quality.jpg" alt="" class="project__logo">
-                        <div class="project">
-                            <div class="project__hashtags">
-                                <h3 class="project__hashtag">#R </h3>
-                            </div>
-                            <h2 class="project__title">Crop Quality Prediction</h2>
-                            <ul class="project__description">
-                                <li class="project__description__bullet">Analyzed the factors explaining crop quality to establish a data-driven quality grading system and help develop a fair value of the crops</li>
-                                <li class="project__description__bullet">Compared the performance of three classification models (decision trees, random forests, SVM)</li>
-                                <li class="project__description__bullet">Conducted factor analysis to discover latent relationships in the agricultural data that may be reflective of crop quality</li>
-                            </ul>
-                            <!-- <p class="project__description"> Developed an interactive web application that allows users to explore disparities in access to mental health care </p> -->
-                            
-    
-                            <a href="https://github.com/hailinkim/stat240_Crop-Quality-Prediction" class="project__icon" target="blank">
-                                <i class="fab fa-github"></i>
-                                >
-                            </a>
-                        </div>
+                        
                     </div>
 
                     <div class="portfolio__projects">
@@ -196,8 +253,8 @@
                             </div>
                             <h2 class="project__title">Health Care Equity</h2>
                             <ul class="project__description">
-                                <li class="project__description__bullet">Deployed an interactive app and blog in group of 3 to analyze the root causes of systemic health inequities and the effectiveness of public health insurance</li>
-                                <li class="project__description__bullet">Performed spatial data visualization, clustering analysis, and text analysis using <b>R</b> and <b>Shiny</b></li>
+                                <li class="project__description__bullet">Spearheaded the deployment of a data analysis blog with a two-member team for a Data Science course project, investigating the causes of health inequities in the United States and assessing the efficacy of public health insurance.</li>
+                                <li class="project__description__bullet">Performed spatial data visualization, clustering, and text analysis using <b>R</b> and <b>Shiny</b></li>
                             </ul>
                             <!-- <p class = "project__description">Used R to analyze my Google calendar data and created data visualizations to track how I spend my time</p> -->
                             <a href="https://stat231-f21.github.io/blog_aaa/" class="project__icon" target="blank">
@@ -207,46 +264,6 @@
                         </div>
                         <img src="img/healthcare.png" alt="" class="project__logo">
                     </div>
-
-                    <div class="portfolio__projects">
-                        <img src="img/meal.png" alt="" class="project__logo" >
-                        <div class="project">
-                            <div class="project__hashtags">
-                                <h3 class="project__hashtag">#Java</h3>
-                                <h3 class="project__hashtag">#R </h3>
-                            </div>
-                            <h2 class="project__title">Val Meal Planner</h2>
-                            <ul class="project__description">
-                                <li class="project__description__bullet">Spearheaded the development of a meal planning program tailored to students' dietary needs in <b>Java</b></li>
-                                <li class="project__description__bullet">Automated the menu data collection process via web scraping in <b>R</b>, accelerating the workflow by 200%</li>
-                            </ul>
-                                <a href="https://github.com/hailinkim/cs112-val-menu-revamped" class="project__icon" target="blank">
-                                <i class="fab fa-github"></i>
-                                >
-                            </a>
-                        </div>
-                    </div>
-        
-                    <div class="portfolio__projects">
-                        <div class="project">
-                            <div class="project__hashtags">
-                                <h3 class="project__hashtag">#R </h3>
-                                <h3 class="project__hashtag">#dplyr </h3>
-                                <h3 class="project__hashtag">#ggplot2 </h3>
-
-                            </div>
-                            <h2 class="project__title">Calendar: How Do I Spend My Time?</h2>
-                            <ul class="project__description">
-                                <li class="project__description__bullet">Constructed a time tracking report for better self-evaluation of productivity, physical and mental well-being</li>
-                                <li class="project__description__bullet">Performed data analysis, wrangling, and visualization in <b>R</b> and <b>LaTex</b></li>
-                            </ul>
-                            <a href="https://github.com/hailinkim/stat231-calendar" class="project__icon" target="blank">
-                                <i class="fab fa-github"></i>
-                                >
-                            </a>
-                        </div>
-                        <img src="img/calendar.png" alt="" class="project__logo">
-                    </div>
                 </section>
             </div> 
         </section>
@@ -254,7 +271,7 @@
         <!-- Research -->
         <section id="research" class="section">
             <div class="section__container">
-                <h1 class="research__section">Research</h1>
+                <h1 class="research__section">Publication</h1>
                 <div class="research">
                     <img src="img/research.png" alt="" class="project__logo">
                     <div class="research__body">
@@ -264,20 +281,24 @@
                             <h3 class="project__hashtag">#Tableau </h3>
                         </div>
                         <h2 class="thesis__title">Analysis of Spatial Density Utilizing The Big Data of Floating Population of Seoul City</h2>
-                        <ul class="thesis__description">
-                            <li class="thesis__description__bullet">Addressed inconveniences often experienced by foriegn tourists in Seoul, Korea, by analyzing and visualizing their travel behavior from their mobile phone call record data in <b>R</b> and <b>QGIS</b></li>
-                            <li class="thesis__description__bullet">Created a <b>Tableau dashboard</b> that shows how nationality and time affect travel patterns</li>
-                            <li class="thesis__description__bullet">Formulated a policy proposal on marketing different segments of tourists to promote cultural heritage tourism, adopted by Cultural Heritage Administration of Korea (a government agency)</li>
-                            <li class ="thesis__description__bullet">Presented a first-authored research paper in reputed international conferences:</li>
+                        <ul class="thesis__description">                               
+                            <li class ="thesis__description__bullet">Ranked 2nd place in the Cultural Heritage Administration Public Policy Competition 2015 for proposing a policy to enhance accessibility to cultual heritage sites by optimizing public transportation routes based on the spatial density of foreign tourists using <b>R</b>, <b>QGIS</b> and <b>Tableau</b></a></li>
+                            
+                            <li class ="thesis__description__bullet">Published a paper on spatiotemporal analysis of foreign tourists' mobility patterns and the implications for urban planning and tourism management in the <a href="http://2015.foss4g.org/" target="blank" class="project__description__bullet">Free and Open Source Software for Geospatial 2015</a> Conference Proceedings</li>
+                            <li class ="thesis__description__bullet">Awards & Presentations:</li>
                             <ul class="thesis__description">
                                 <li class="thesis__description__bullet">Women in Data Science Cambridge 2021 Conference Presentation</li>
-                                <li class="thesis__description__bullet">Free and Open Source Software for Geospatial 2015 Conference Best Oral Presentation Award</li>
+                                <li class="thesis__description__bullet">Free and Open Source Software for Geospatial 2015 Conference Best Presentation Award</li>
+                                <li class="thesis__description__bullet">Cultural Heritage Administration Public Policy Competition 2015 2nd Place</li>
                             </ul>
                             
                         </ul>
                         <a href="https://public.tableau.com/profile/angelica.kim1227#!/vizhome/TouristBehavior/Dashboard2?publish=yes" class="thesis__icon2" target="blank">
                             <img src="img/tableau.png" alt="" class="thesis__icon2">
                             
+                        </a>
+                        <a href="https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1111&context=foss4g" class="thesis__icon" target="blank">
+                            <i class="fa fa-file-text"></i>
                         </a>
                         <a href="https://github.com/hailinkim/thesis" class="thesis__icon" target="blank">
                             <i class="fab fa-github"></i>
