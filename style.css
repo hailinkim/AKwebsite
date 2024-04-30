@@ -343,8 +343,9 @@ a.work__description{
 .work__icon {
   color: var(--color-black);
   margin: 0px;
+  margin-left: 6px;
   font-weight: var(--weight-regular);
-  font-size: 25px;
+  font-size:15px;
   transition: all var(--animation-duration) ease-in-out;
   padding: 0;
   line-height: 20px;
@@ -490,6 +491,11 @@ img.thesis__icon2 {
   height: 25%;
   position: relative;
   top: 4px;
+}
+
+.work__icon:hover{
+  color: var(--color-yellow);
+  font-size: 17px;
 }
 
 .project__icon:hover,
